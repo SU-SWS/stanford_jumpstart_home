@@ -76,7 +76,7 @@ layout[mayfield-news-events][color]             = FALSE
 
 layout[serra-news-events][context]           = serra-news-events
 layout[serra-news-events][thumb]             = default.jpg
-layout[serra-news-events][title]             = "Serra"
+layout[serra-news-events][title]             = "Serra with News & Events"
 layout[serra-news-events][description]       = "<ul><li>Lead Text block</li><li>Info Text block</li><li>Two text columns</li><li>About block</li><li>Auto-generated News block</li><li>Auto-generated Events block</li></ul>"
 layout[serra-news-events][header_image]      = FALSE
 layout[serra-news-events][light_dark]        = FALSE
@@ -85,7 +85,7 @@ layout[serra-news-events][color]             = FALSE
 
 layout[panama-news-events][context]           = panama-news-events
 layout[panama-news-events][thumb]             = default.jpg
-layout[panama-news-events][title]             = "Panama"
+layout[panama-news-events][title]             = "Panama with News & Events"
 layout[panama-news-events][description]       = "<ul><li>About block</li><li>Spotlight block</li><li>Banner block</li><li>Auto-generated News block</li><li>Auto-generated Events block</li><li>Affiliated Programs block</li></ul>"
 layout[panama-news-events][header_image]      = FALSE
 layout[panama-news-events][light_dark]        = FALSE
