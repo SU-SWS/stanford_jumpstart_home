@@ -155,8 +155,13 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
 
     $context = context_load($config['context']);
     $options = variable_get('sjh_' . $context->name, array());
-    $key = $context->name;;
+    $key = $context->name;
     $access = user_access('see enabled homepage options');
+
+    if (!$context) {
+      drupal_set_message('Could not load context: ' . $config['context'], 'error');
+      continue;
+    }
 
     if (!$options['site_admin']) {
       $access = user_access('see disabled homepage options');
@@ -327,20 +332,17 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
   // Pull theme options from the theme itself
 
   // Include theme-settings.php
-  // require_once drupal_get_path('theme', 'stanford_light') . "/theme-settings.php";
-  // $theme_form = array();
+  require_once drupal_get_path('theme', 'stanford_framework') . "/theme-settings.php";
+  $theme_form = array();
 
-  // // Set the theme temporarily
-  // $GLOBALS['theme_key'] = 'stanford_light';
-  // stanford_light_form_system_theme_settings_alter($theme_form, $form_state);
+  // Set the theme temporarily
+  $GLOBALS['theme_key'] = 'stanford_framework';
+  stanford_framework_form_system_theme_settings_alter($theme_form, $form_state);
 
-  // $form['design_container'] = $theme_form['design_container'];
-  // $form['design_container']['#attributes']["style"] = array("width: 100%;");
-  // $form['design_container']['#tree'] = TRUE;
-  // $form['design_container']['#collapsible'] = FALSE;
-  // $form['design_container']['#title'] = t('Choose styles');
-
-  // $form['design_container']['styles']['#title'] = t('Styles');
+  $form['design_container'] = $theme_form['design_container'];
+  $form['design_container']['#attributes']["style"] = array("width: 100%;");
+  $form['design_container']['#tree'] = TRUE;
+  $form['design_container']['#collapsible'] = FALSE;
 
   $form['submit'] = array(
     '#type' => 'submit',
@@ -394,11 +396,13 @@ function stanford_jumpstart_homepage_dashboard_form_submit($form, $form_state) {
   }
 
   // Save the theme settings
-  // $theme_settings = variable_get('theme_stanford_light_settings', array());
-  // foreach ($values['design_container'] as $key => $value) {
-  //   $theme_settings[$key] = $value;
-  // }
-  // variable_set('theme_stanford_light_settings', $theme_settings);
+  $theme_settings = variable_get('theme_stanford_framework_settings', array());
+  foreach ($values['design_container'] as $key => $value) {
+    $theme_settings[$key] = $value;
+  }
+  // force custom option.
+  $theme_settings['choosestyle_styleoptions'] = 'style_custom';
+  variable_set('theme_stanford_framework_settings', $theme_settings);
 
   drupal_set_message('Customized design options saved', 'status');
 
