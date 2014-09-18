@@ -38,8 +38,11 @@ img {
   border-top: 1px solid #eee;
   margin: 0;
 }
+.homepage-layout .form-item.form-type-checkbox {
+  border: 0 none;
+}
 .homepage-layout .form-item label {
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
 }
 .homepage-layout .form-radios .form-item {
   padding: 0;
