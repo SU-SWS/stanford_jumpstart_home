@@ -1,3 +1,22 @@
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+.form-item.form-type-radio.form-item-design-container-styles,
+.form-item.form-type-radio.form-item-design-container-fonts {
+  border: 1px solid #eee;
+  display: inline-block;
+  margin: 0 1em 1em 0;
+  padding: 1em;
+  min-width: 270px;
+}
+.form-item.form-type-radio.form-item-design-container-styles.active,
+.form-item.form-type-radio.form-item-design-container-fonts.active {
+  background: #f8fff0;
+  border: 1px solid #bbee77;
+}
+
 .homepage-layout {
   display: inline-block;
   width: 300px;
@@ -12,30 +31,6 @@
 .homepage-layout img {
   max-width: 100%;
   height: auto;
-}
-
-.homepage-layout h2.title {
-
-}
-
-.homepage-layout input.form-submit {
-
-}
-
-.homepage-layout .form-item label {
-
-}
-
-.homepage-layout .form-item div.description {
-
-}
-
-.homepage-layout .form-radios .form-item {
-
-}
-
-.homepage-layout .form-managed-file .form-file {
-
 }
 
 .homepage-layout.selected {

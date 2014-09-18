@@ -4,10 +4,10 @@
  */
 
 $context = new stdClass();
-$context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+$context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
 $context->api_version = 3;
-$context->name = 'stanford_jumpstart_home_serra';
-$context->description = 'Homepage: large text and data treatments, bold color background, flat design (Magazine Glossy)';
+$context->name = 'stanford_jumpstart_home_serra_news_events';
+$context->description = 'Homepage: large text and data treatments, bold color background, flat design (Magazine Glossy) with News and Events for dynamic content websites';
 $context->tag = 'Home Page';
 $context->conditions = array(
   'path' => array(
@@ -49,15 +49,15 @@ $context->reactions = array(
         'region' => 'content_row3',
         'weight' => '-10',
       ),
-      'bean-flexi-block-for-the-home-page' => array(
-        'module' => 'bean',
-        'delta' => 'flexi-block-for-the-home-page',
+      'views-f73ff55b085ea49217d347de6630cd5a' => array(
+        'module' => 'views',
+        'delta' => 'f73ff55b085ea49217d347de6630cd5a',
         'region' => 'content_row3',
         'weight' => '-9',
       ),
-      'bean-jumpstart-homepage-announcements' => array(
-        'module' => 'bean',
-        'delta' => 'jumpstart-homepage-announcements',
+      'views-stanford_events_views-block' => array(
+        'module' => 'views',
+        'delta' => 'stanford_events_views-block',
         'region' => 'content_row3',
         'weight' => '-8',
       ),
@@ -69,4 +69,4 @@ $context->condition_mode = 0;
 // Translatables
 // Included for use with string extractors like potx.
 t('Home Page');
-t('Homepage: large text and data treatments, bold color background, flat design (Magazine Glossy)');
+t('Homepage: large text and data treatments, bold color background, flat design (Magazine Glossy) with News and Events for dynamic content websites');
