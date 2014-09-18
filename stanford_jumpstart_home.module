@@ -332,7 +332,12 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
   // Pull theme options from the theme itself
 
   // Include theme-settings.php
-  require_once drupal_get_path('theme', 'stanford_framework') . "/theme-settings.php";
+  $themesettingsphp = drupal_get_path('theme', 'stanford_framework') . "/theme-settings.php";
+  if (!is_file($themesettingsphp)) {
+    drupal_set_message("Could not find theme-settings.php for Stanford Framework theme", 'error');
+    return $form;
+  }
+  require_once $themesettingsphp;
   $theme_form = array();
 
   // Set the theme temporarily
@@ -401,7 +406,7 @@ function stanford_jumpstart_homepage_dashboard_form_submit($form, $form_state) {
     $theme_settings[$key] = $value;
   }
   // force custom option.
-  $theme_settings['choosestyle_styleoptions'] = 'style_custom';
+  $theme_settings['choosestyle_styleoptions'] = 'style-custom';
   variable_set('theme_stanford_framework_settings', $theme_settings);
 
   drupal_set_message('Customized design options saved', 'status');
