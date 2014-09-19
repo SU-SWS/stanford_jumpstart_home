@@ -145,10 +145,23 @@ function stanford_jumpstart_home_get_contexts($clear_cache = FALSE) {
  */
 function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
 
+  drupal_set_title('Customize Design');
+
   $filename = drupal_get_path('module', 'stanford_jumpstart_home') . "/stanford_jumpstart_home.info";
   $info = drupal_parse_info_file($filename);
   $layouts = $info['layout'];
-  $form['layouts']["#tree"] = TRUE;
+
+  $form['intro']['#markup'] = "<h5>" . t("Use the following options to customize the design and layout of your site. Choose a homepage layout, visual style, and font family") . "</h5>";
+
+  $form['choosehome'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Choose home page layout'),
+    '#description' => t('Press the select button of one of the home page layout options below to select and customize your site\'s home page.'),
+    '#collapsed' => FALSE,
+    '#collapsible' => FALSE,
+  );
+
+  $form['choosehome']['layouts']["#tree"] = TRUE;
 
   foreach ($layouts as $index => $config) {
 
@@ -167,7 +180,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
     }
 
     // Field Group
-    $form['layouts'][$key] = array(
+    $form['choosehome']['layouts'][$key] = array(
       '#type' => 'container',
       '#tree' => TRUE,
       '#attributes' => array(
@@ -179,11 +192,11 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
     );
 
     if (!$context->disabled) {
-      $form['layouts'][$key]["#attributes"]['class'][] = "selected";
+      $form['choosehome']['layouts'][$key]["#attributes"]['class'][] = "selected";
     }
 
     // Show this option to site owner
-    $form['layouts'][$key]['site_admin'] = array(
+    $form['choosehome']['layouts'][$key]['site_admin'] = array(
       '#type' => 'checkbox',
       '#title' => t('Enable this option.'),
       '#description' => t('This checkbox enables users with the "See enabled homepage options" permission to select this layout.'),
@@ -198,14 +211,14 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
       'alt' => $config['title'],
       'title' => $config['title'],
     );
-    $form['layouts'][$key]['thumb']["#markup"] = theme_image($variables);
+    $form['choosehome']['layouts'][$key]['thumb']["#markup"] = theme_image($variables);
 
     // Enabled
     $selectedornot = ($context->disabled) ? t("Select") : t("Selected");
     # $class = ($context->disabled) ? "" : "selected";
     # $form[$key]['status']['#markup'] = "<div><a class=\"$class button\" name=\"". $context->name . "\" id=\"" . $context->name . "\">" . (($context->disabled) ? t("Select") : t("Selected")) . "</a></div>";
 
-    $form['layouts'][$key]['selecter'] = array(
+    $form['choosehome']['layouts'][$key]['selecter'] = array(
       '#type' => "button",
       '#value' => $selectedornot,
       '#name' => $context->name . "_select",
@@ -217,26 +230,26 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
     );
 
     // Title
-    $form['layouts'][$key]['title']['#markup'] = "<h2 class=\"title\">" . t($config['title']) . "</h2>";
+    $form['choosehome']['layouts'][$key]['title']['#markup'] = "<h2 class=\"title\">" . t($config['title']) . "</h2>";
 
     // Description
-    $form['layouts'][$key]['description']['#markup'] = check_markup($config['description'], 'filtered_html');
+    $form['choosehome']['layouts'][$key]['description']['#markup'] = check_markup($config['description'], 'filtered_html');
 
     // Context name
-    $form['layouts'][$key]["context_name"] = array(
+    $form['choosehome']['layouts'][$key]["context_name"] = array(
       '#type' => "hidden",
       '#value' => $config['context'],
     );
 
     // State machine, or just form states.
-    $form['layouts'][$key]["selectedstate"] = array(
+    $form['choosehome']['layouts'][$key]["selectedstate"] = array(
       '#type' => 'hidden',
       '#value' => $context->disabled,
     );
 
     // Header Image Field
     if (!empty($config['header_image'])) {
-      $form['layouts'][$key]['header_image'] = array(
+      $form['choosehome']['layouts'][$key]['header_image'] = array(
         '#title' => t('Header image'),
         '#type' => 'managed_file',
         '#description' => t('The uploaded image will be displayed on this layout as a header image.'),
@@ -253,7 +266,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
 
     // Background Image Field
     if (!empty($config['background_image'])) {
-      $form['layouts'][$key]['background_image'] = array(
+      $form['choosehome']['layouts'][$key]['background_image'] = array(
         '#title' => t('Background image'),
         '#type' => 'managed_file',
         '#description' => t('The uploaded image will be displayed on this layout as a background image.'),
@@ -270,7 +283,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
 
     // Color picker
     if (!empty($config['color'])) {
-      $form['layouts'][$key]['color'] = array(
+      $form['choosehome']['layouts'][$key]['color'] = array(
         '#title' => t('Choose color'),
         '#type' => 'select',
         '#description' => t('Choose the color you would like your background to be.'),
@@ -291,7 +304,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
     // Light & Dark options
     // Color picker
     if (!empty($config['light_dark'])) {
-      $form['layouts'][$key]['light_dark'] = array(
+      $form['choosehome']['layouts'][$key]['light_dark'] = array(
         '#title' => t('Choose a title color'),
         '#type' => 'radios',
         '#description' => t('Choose the color you would like your header title to be.'),
@@ -315,7 +328,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
     unset($config['description']);
 
     if (count($config) >= 1) {
-      $form['layouts'][$key]['submit'] = array(
+      $form['choosehome']['layouts'][$key]['submit'] = array(
         '#type' => 'submit',
         '#value' => t('Save settings'),
         '#states' => array(
@@ -424,6 +437,8 @@ function stanford_homepage_switch_context($form, $form_state) {
   $submit_button = $form_state['triggering_element'];
   $selected = $form_state["clicked_button"]['#parents'][1];
   $context_status = variable_get('context_status', array());
+
+  dpm($values);
 
   foreach ($values['layouts'] as $k => $config) {
     $context_name = $config['context_name'];
