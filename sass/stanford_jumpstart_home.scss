@@ -42,6 +42,36 @@
 		background: $bright-clr-header-bkg;
 	}
 }
+.stanford-jumpstart-home-lomita.style-custom-styles-cardinal {
+	.navbar {
+		background: $cardinal-clr-header-bkg;
+	}
+}
+.stanford-jumpstart-home-lomita.style-custom-styles-contrast {
+	.navbar {
+		background: $contrast-clr-header-bkg;
+	}
+}
+.stanford-jumpstart-home-lomita.style-custom-styles-dark {
+	.navbar {
+		background: $dark-clr-header-bkg;
+	}
+}
+.stanford-jumpstart-home-lomita.style-custom-styles-light {
+	.navbar {
+		background: $light-clr-header-bkg;
+	}
+}
+.stanford-jumpstart-home-lomita.style-custom-styles-plain {
+	.navbar {
+		background: $plain-clr-header-bkg;
+	}
+}
+.stanford-jumpstart-home-lomita.style-custom-styles-rich {
+	.navbar {
+		background: $bright-clr-header-bkg;
+	}
+}
 
 
 /** LAYOUT: MAYFIELD ************************
@@ -63,7 +93,44 @@
 ******************************************/
 
 .stanford-jumpstart-home-palm {
-
+	.site-main-menu {
+		background: transparent;
+	}
+}
+.stanford-jumpstart-home-palm.style-custom-styles-bright {
+	.navbar {
+		background: $bright-clr-header-bkg;
+	}
+}
+.stanford-jumpstart-home-palm.style-custom-styles-cardinal {
+	.navbar {
+		background: $cardinal-clr-header-bkg;
+	}
+}
+.stanford-jumpstart-home-palm.style-custom-styles-contrast {
+	.navbar {
+		background: $contrast-clr-header-bkg;
+	}
+}
+.stanford-jumpstart-home-palm.style-custom-styles-dark {
+	.navbar {
+		background: $dark-clr-header-bkg;
+	}
+}
+.stanford-jumpstart-home-palm.style-custom-styles-light {
+	.navbar {
+		background: $light-clr-header-bkg;
+	}
+}
+.stanford-jumpstart-home-palm.style-custom-styles-plain {
+	.navbar {
+		background: $plain-clr-header-bkg;
+	}
+}
+.stanford-jumpstart-home-palm.style-custom-styles-rich {
+	.navbar {
+		background: $bright-clr-header-bkg;
+	}
 }
 
 
@@ -76,23 +143,56 @@
 ******************************************/
 
 .stanford-jumpstart-home-serra {
-	
+	.site-main-menu, .navbar {
+		background: transparent;
+	}
+	.main {
+		padding-top: 0;
+	}
+	.site-main-menu {
+		border: 0;
+	}
+	.main-top {
+		padding-top: 2em;
+		margin-bottom: 2em;
+	}
 }
-.stanford-jumpstart-home-serra .main {
-	padding-top: 0;
+.stanford-jumpstart-home-serra.style-custom-styles-bright {
+	.main-top, .site-main-menu, .header {
+		background: $bright_clr-header-bkg;
+	}
 }
-.stanford-jumpstart-home-serra .main-top,
-.stanford-jumpstart-home-serra .site-main-menu,
-.stanford-jumpstart-home-serra .header {
-	background: #e9e6df;
+.stanford-jumpstart-home-serra.style-custom-styles-cardinal {
+	.main-top, .site-main-menu, .header {
+		background: $cardinal_clr-header-bkg;
+	}
 }
-.stanford-jumpstart-home-serra .site-main-menu {
-	border: 0;
+.stanford-jumpstart-home-serra.style-custom-styles-contrast {
+	.main-top, .site-main-menu, .header {
+		background: $contrast_clr-header-bkg;
+	}
 }
-.stanford-jumpstart-home-serra .main-top {
-	padding-top: 2em;
-	margin-bottom: 2em;
+.stanford-jumpstart-home-serra.style-custom-styles-dark {
+	.main-top, .site-main-menu, .header {
+		background: $dark_clr-header-bkg;
+	}
 }
+.stanford-jumpstart-home-serra.style-custom-styles-light {
+	.main-top, .site-main-menu, .header {
+		background: $light_clr-header-bkg;
+	}
+}
+.stanford-jumpstart-home-serra.style-custom-styles-plain {
+	.main-top, .site-main-menu, .header {
+		background: $plain_clr-header-bkg;
+	}
+}
+.stanford-jumpstart-home-serra.style-custom-styles-rich {
+	.main-top, .site-main-menu, .header {
+		background: $rich_clr-header-bkg;
+	}
+}
+
 
 
 /** LAYOUT: PANAMA ************************
