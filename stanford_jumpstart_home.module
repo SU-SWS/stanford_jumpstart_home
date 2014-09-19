@@ -419,6 +419,7 @@ function stanford_jumpstart_homepage_dashboard_form_submit($form, $form_state) {
   }
   // force custom option.
   $theme_settings['choosestyle_styleoptions'] = 'style-custom';
+
   variable_set('theme_stanford_framework_settings', $theme_settings);
 
   drupal_set_message('Customized design options saved', 'status');
@@ -479,7 +480,7 @@ function stanford_jumpstart_home_process_file_managed($element, &$form_state, $f
  * @param  [type] $vars [description]
  * @return [type]       [description]
  */
-function stanford_jumpstart_home_process_html(&$vars) {
+function stanford_jumpstart_home_preprocess_html(&$vars) {
   global $theme;
 
   $context_name = variable_get('stanford_jumpstart_home_active', '');
@@ -499,18 +500,25 @@ function stanford_jumpstart_home_process_html(&$vars) {
     return;
   }
 
-  $fid = $settings['background_image'];
-  $file = file_load($fid);
+  $background_fid = $settings['background_image'];
+  $background_file = file_load($background_fid);
 
-  if (!empty($file)) {
-    $vars['body_bg_type'] = 'photobg';
-    $vars['body_bg_classes'] = 'bodybg';
-    $vars['body_bg_path'] = $file->uri;
+  $header_fid = $settings['header_image'];
+  $header_file = file_load($header_fid);
+
+  if (!empty($background_file)) {
+    // $vars['body_bg_type'] = 'photobg';
+    // $vars['body_bg_classes'] = 'bodybg';
+    // $vars['body_bg_path'] = $background_file->uri;
+    $vars['header_bkg_style'] = "header-bkg-image";
+    $vars['header_bkg'] = 'header-bkg';
+    $vars['header_bkg_path'] = $background_file->uri;
   }
 
   if (!empty($settings['header_image'])) {
     $vars['header_bkg_style'] = "header-bkg-image";
     $vars['header_bkg'] = 'header-bkg';
+    $vars['header_bkg_path'] = $header_file->uri;
   }
 
   if (isset($settings['light_dark'])) {
@@ -520,36 +528,3 @@ function stanford_jumpstart_home_process_html(&$vars) {
   }
 
 }
-
-/**
- * [stanford_jumpstart_home_process_page description]
- * @param  [type] $vars [description]
- * @return [type]       [description]
- */
-function stanford_jumpstart_home_process_page(&$vars) {
-
-  $context_name = variable_get('stanford_jumpstart_home_active', '');
-
-  // No active context set.
-  if (empty($context_name)) {
-    return;
-  }
-
-  $settings = variable_get('sjh_' . $context_name, null);
-
-  // Missing settings.
-  if (is_null($settings)) {
-    return;
-  }
-
-  $fid = $settings['header_image'];
-  $file = file_load($fid);
-
-  if (!empty($file)) {
-    $vars['header_bkg_style'] = "header-bkg-image";
-    $vars['header_bkg'] = 'header-bkg';
-    $vars['header_bkg_path'] = $file->uri;
-  }
-
-}
-
