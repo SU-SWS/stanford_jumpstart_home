@@ -1,5 +1,6 @@
 /** SASS ****************************/
 @import
+	"compass/css3",
 	"variables/variables",
 	"variables/bright-variables",
 	"variables/cardinal-variables",
@@ -36,40 +37,95 @@
 	.site-main-menu {
 		background: transparent;
 	}
+	.content-top .block {
+		border: none;
+		padding: 1em;
+	    @include border-radius(0);
+	    @include box-shadow(none);
+	}
 }
 .stanford-jumpstart-home-lomita.style-custom-styles-bright {
 	.navbar {
-		background: $bright-clr-header-bkg;
+		background: $bright_clr-header-bkg;
+	}
+	.content-top .block {
+		background: $bright_clr-well-bkg;
+		color: $bright_clr-page-bkg;
+	}
+	.site-footer {
+		background: $bright_clr-footer-bkg;
 	}
 }
 .stanford-jumpstart-home-lomita.style-custom-styles-cardinal {
 	.navbar {
-		background: $cardinal-clr-header-bkg;
+		background: $cardinal_clr-header-bkg;
+	}
+	.content-top .block {
+		background: $cardinal_clr-well-bkg;
+		color: $cardinal_clr-page-bkg;
+	}
+	.site-footer {
+		background: $cardinal_clr-footer-bkg;
 	}
 }
 .stanford-jumpstart-home-lomita.style-custom-styles-contrast {
 	.navbar {
-		background: $contrast-clr-header-bkg;
+		background: $contrast_clr-header-bkg;
+	}
+	.content-top .block {
+		background: $contrast_clr-well-bkg;
+		color: $contrast_clr-page-bkg;
+	}
+	.site-footer {
+		background: $contrast_clr-footer-bkg;
 	}
 }
 .stanford-jumpstart-home-lomita.style-custom-styles-dark {
 	.navbar {
-		background: $dark-clr-header-bkg;
+		background: $dark_clr-header-bkg;
+	}
+	.content-top .block {
+		background: $dark_clr-well-bkg;
+		color: $dark_clr-page-bkg;
+	}
+	.site-footer {
+		background: $dark_clr-footer-bkg;
 	}
 }
 .stanford-jumpstart-home-lomita.style-custom-styles-light {
 	.navbar {
-		background: $light-clr-header-bkg;
+		background: $light_clr-header-bkg;
+	}
+	.content-top .block {
+		background: $light_clr-well-bkg;
+		color: $light_clr-page-bkg;
+	}
+	.site-footer {
+		background: $light_clr-footer-bkg;
 	}
 }
 .stanford-jumpstart-home-lomita.style-custom-styles-plain {
 	.navbar {
-		background: $plain-clr-header-bkg;
+		background: $plain_clr-header-bkg;
+	}
+	.content-top .block {
+		background: $plain_clr-well-bkg;
+		color: $plain_clr-page-bkg;
+	}
+	.site-footer {
+		background: $plain_clr-footer-bkg;
 	}
 }
 .stanford-jumpstart-home-lomita.style-custom-styles-rich {
 	.navbar {
-		background: $bright-clr-header-bkg;
+		background: $rich_clr-header-bkg;
+	}
+	.content-top .block {
+		background: $rich_clr-well-bkg;
+		color: $rich_clr-page-bkg;
+	}
+	.site-footer {
+		background: $rich_clr-footer-bkg;
 	}
 }
 
@@ -99,37 +155,37 @@
 }
 .stanford-jumpstart-home-palm.style-custom-styles-bright {
 	.navbar {
-		background: $bright-clr-header-bkg;
+		background: $bright_clr-header-bkg;
 	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal {
 	.navbar {
-		background: $cardinal-clr-header-bkg;
+		background: $cardinal_clr-header-bkg;
 	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-contrast {
 	.navbar {
-		background: $contrast-clr-header-bkg;
+		background: $contrast_clr-header-bkg;
 	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-dark {
 	.navbar {
-		background: $dark-clr-header-bkg;
+		background: $dark_clr-header-bkg;
 	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-light {
 	.navbar {
-		background: $light-clr-header-bkg;
+		background: $light_clr-header-bkg;
 	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-plain {
 	.navbar {
-		background: $plain-clr-header-bkg;
+		background: $plain_clr-header-bkg;
 	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-rich {
 	.navbar {
-		background: $bright-clr-header-bkg;
+		background: $bright_clr-header-bkg;
 	}
 }
 
