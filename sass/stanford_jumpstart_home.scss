@@ -1,19 +1,16 @@
-/* line 1, ../sass/stanford_jumpstart_home.scss */
 .big-text {
-  font-size: 3em;
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1.1em;
-  margin-bottom: 0.5em;
+	font-size: 3em;
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	line-height: 1.1em;
+	margin-bottom: 0.5em;
 }
-
-/* line 8, ../sass/stanford_jumpstart_home.scss */
 .infotext {
-  font-size: 4em;
-  font-weight: 600;
-  line-height: 1em;
-  margin-bottom: 0;
-  letter-spacing: -0.05em;
+	font-size: 4em;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 0;
+    letter-spacing: -0.05em;
 }
 
 /** LAYOUT: LOMITA ************************
@@ -21,10 +18,16 @@
 	- Big text block
 	- Video block
 ******************************************/
-/* line 24, ../sass/stanford_jumpstart_home.scss */
-.stanford-jumpstart-home-lomita .site-main-menu {
-  background: transparent;
+
+.stanford-jumpstart-home-lomita {
 }
+.stanford-jumpstart-home-lomita .site-main-menu {
+	background: transparent;
+}
+.stanford-jumpstart-home-lomita .navbar {
+	
+}
+
 
 /** LAYOUT: MAYFIELD ************************
 	- Header background image
@@ -32,11 +35,23 @@
 	- Quote block
 	- Three blocks
 ******************************************/
+
+.stanford-jumpstart-home-mayfield {
+
+}
+
+
 /** LAYOUT: PALM ************************
 	- 12-column banner with overlay
 	- Three blocks
 	- Menu not full width
 ******************************************/
+
+.stanford-jumpstart-home-palm {
+
+}
+
+
 /** LAYOUT: SERRA ************************
 	- Color background on header
 	- Big text block
@@ -44,31 +59,33 @@
 	- Two-column intro text 
 	- Three blocks
 ******************************************/
-/* line 66, ../sass/stanford_jumpstart_home.scss */
-.stanford-jumpstart-home-serra .main {
-  padding-top: 0;
-}
 
-/* line 71, ../sass/stanford_jumpstart_home.scss */
+.stanford-jumpstart-home-serra {
+	
+}
+.stanford-jumpstart-home-serra .main {
+	padding-top: 0;
+}
 .stanford-jumpstart-home-serra .main-top,
 .stanford-jumpstart-home-serra .site-main-menu,
 .stanford-jumpstart-home-serra .header {
-  background: #e9e6df;
+	background: #e9e6df;
 }
-
-/* line 74, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra .site-main-menu {
-  border: 0;
+	border: 0;
+}
+.stanford-jumpstart-home-serra .main-top {
+	padding-top: 2em;
+	margin-bottom: 2em;
 }
 
-/* line 77, ../sass/stanford_jumpstart_home.scss */
-.stanford-jumpstart-home-serra .main-top {
-  padding-top: 2em;
-  margin-bottom: 2em;
-}
 
 /** LAYOUT: PANAMA ************************
 	- About block
 	- Banner image with overlay 
 	- Three blocks
 ******************************************/
+
+.stanford-jumpstart-home-panama {
+	
+}
