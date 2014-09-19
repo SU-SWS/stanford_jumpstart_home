@@ -1,3 +1,16 @@
+/** SASS ****************************/
+@import
+	"variables/variables",
+	"variables/bright-variables",
+	"variables/cardinal-variables",
+	"variables/contrast-variables",
+	"variables/dark-variables",
+	"variables/light-variables",
+	"variables/plain-variables",
+	"variables/rich-variables";
+
+/** GENERAL ****************************/
+
 .big-text {
 	font-size: 3em;
 	font-weight: 500;
@@ -20,12 +33,14 @@
 ******************************************/
 
 .stanford-jumpstart-home-lomita {
+	.site-main-menu {
+		background: transparent;
+	}
 }
-.stanford-jumpstart-home-lomita .site-main-menu {
-	background: transparent;
-}
-.stanford-jumpstart-home-lomita .navbar {
-	
+.stanford-jumpstart-home-lomita.style-custom-styles-bright {
+	.navbar {
+		background: $bright-clr-header-bkg;
+	}
 }
 
 

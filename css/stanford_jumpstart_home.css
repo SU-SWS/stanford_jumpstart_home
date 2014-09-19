@@ -1,4 +1,6 @@
-/* line 1, ../sass/stanford_jumpstart_home.scss */
+/** SASS ****************************/
+/** GENERAL ****************************/
+/* line 14, ../sass/stanford_jumpstart_home.scss */
 .big-text {
   font-size: 3em;
   font-weight: 500;
@@ -7,7 +9,7 @@
   margin-bottom: 0.5em;
 }
 
-/* line 8, ../sass/stanford_jumpstart_home.scss */
+/* line 21, ../sass/stanford_jumpstart_home.scss */
 .infotext {
   font-size: 4em;
   font-weight: 600;
@@ -21,9 +23,14 @@
 	- Big text block
 	- Video block
 ******************************************/
-/* line 24, ../sass/stanford_jumpstart_home.scss */
+/* line 36, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-lomita .site-main-menu {
   background: transparent;
+}
+
+/* line 41, ../sass/stanford_jumpstart_home.scss */
+.stanford-jumpstart-home-lomita.style-custom-styles-bright .navbar {
+  background: #53284f;
 }
 
 /** LAYOUT: MAYFIELD ************************
@@ -44,24 +51,24 @@
 	- Two-column intro text 
 	- Three blocks
 ******************************************/
-/* line 66, ../sass/stanford_jumpstart_home.scss */
+/* line 81, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra .main {
   padding-top: 0;
 }
 
-/* line 71, ../sass/stanford_jumpstart_home.scss */
+/* line 86, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra .main-top,
 .stanford-jumpstart-home-serra .site-main-menu,
 .stanford-jumpstart-home-serra .header {
   background: #e9e6df;
 }
 
-/* line 74, ../sass/stanford_jumpstart_home.scss */
+/* line 89, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra .site-main-menu {
   border: 0;
 }
 
-/* line 77, ../sass/stanford_jumpstart_home.scss */
+/* line 92, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra .main-top {
   padding-top: 2em;
   margin-bottom: 2em;
