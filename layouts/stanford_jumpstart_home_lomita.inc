@@ -4,7 +4,7 @@
  */
 
 $context = new stdClass();
-$context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+$context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
 $context->api_version = 3;
 $context->name = 'stanford_jumpstart_home_lomita';
 $context->description = 'Homepage: large image body background, full bleed (Sunset Delorean)';
