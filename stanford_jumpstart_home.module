@@ -438,8 +438,6 @@ function stanford_homepage_switch_context($form, $form_state) {
   $selected = $form_state["clicked_button"]['#parents'][1];
   $context_status = variable_get('context_status', array());
 
-  dpm($values);
-
   foreach ($values['layouts'] as $k => $config) {
     $context_name = $config['context_name'];
     $context_status[$context_name] = TRUE;
