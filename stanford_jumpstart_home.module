@@ -120,12 +120,13 @@ function stanford_jumpstart_home_get_contexts($clear_cache = FALSE) {
   }
   else {
     $dir = drupal_get_path('module', 'stanford_jumpstart_home') . '/layouts';
+
     $mask = "/.*\.inc$/";
     $options['key'] = 'name';
     $files = file_scan_directory($dir, $mask, $options);
 
     foreach ($files as $name => $data) {
-      require_once DRUPAL_ROOT . "/" . $data->uri;
+      include DRUPAL_ROOT . "/" . $data->uri;
       $contexts[$context->name] = $context;
     }
 
@@ -476,6 +477,8 @@ function stanford_jumpstart_home_process_html(&$vars) {
   }
 
   $settings = variable_get('sjh_' . $context_name, null);
+  $vars['classes_array'][] = "active-home-context";
+  $vars['classes_array'][] = drupal_clean_css_identifier($context_name);
   $vars['classes'] .= " active-home-context " . drupal_clean_css_identifier($context_name);
 
   // Missing settings.
