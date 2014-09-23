@@ -366,7 +366,6 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
     '#value' => t('Save settings'),
     '#prefix' => "<div style=\"clear: both;\">",
     '#suffix' => "</div>",
-    '#access' => user_access('see disabled homepage options'),
   );
 
   return $form;
