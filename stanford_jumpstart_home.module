@@ -62,6 +62,7 @@ function stanford_jumpstart_home_menu() {
     'page callback' => 'stanford_jumpstart_home_dashboard',
     'access arguments' => array('administer stanford homepage'),
     'type' => MENU_LOCAL_TASK,
+    'weight' => -80,
   );
 
   $items['admin/stanford-jumpstart/customize-designs'] = array(
