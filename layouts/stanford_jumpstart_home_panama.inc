@@ -37,9 +37,9 @@ $context->reactions = array(
         'region' => 'content_top',
         'weight' => '-10',
       ),
-      'bean-announcements-block' => array(
+      'bean-jumpstart-lead-text-with-body' => array(
         'module' => 'bean',
-        'delta' => 'announcements-block',
+        'delta' => 'jumpstart-lead-text-with-body',
         'region' => 'content',
         'weight' => '-10',
       ),
