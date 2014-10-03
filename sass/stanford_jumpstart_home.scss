@@ -194,7 +194,7 @@
 	- Color background on header
 	- Big text block
 	- Infotext block
-	- Two-column intro text 
+	- Two-column mission text blocks 
 	- Three blocks
 ******************************************/
 
@@ -211,6 +211,10 @@
 	.main-top {
 		padding-top: 2em;
 		margin-bottom: 2em;
+	}
+	.mission-block {
+		font-size: 1.3em;
+		line-height: 1.4em;
 	}
 }
 .stanford-jumpstart-home-serra.style-custom-styles-bright {
