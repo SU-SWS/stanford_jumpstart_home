@@ -6,7 +6,7 @@ version = 7.x-1.0
 project = stanford_jumpstart_home
 project status url = https://github.com/SU-SWS/stanford_jumpstart_home
 
-# stylesheets[all][] = css/stanford_jumpstart_home.css
+stylesheets[all][] = css/stanford_jumpstart_home.css
 # scripts[] = js/stanford_jumpstart_home.js
 
 dependencies[] = context
