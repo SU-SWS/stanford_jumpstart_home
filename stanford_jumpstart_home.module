@@ -219,7 +219,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
     # $class = ($context->disabled) ? "" : "selected";
     # $form[$key]['status']['#markup'] = "<div><a class=\"$class button\" name=\"". $context->name . "\" id=\"" . $context->name . "\">" . (($context->disabled) ? t("Select") : t("Selected")) . "</a></div>";
 
-    $form['choosehome']['layouts'][$key]['selecter'] = array(
+    $form['choosehome']['layouts'][$key]['selector'] = array(
       '#type' => "button",
       '#value' => $selectedornot,
       '#name' => $context->name . "_select",
