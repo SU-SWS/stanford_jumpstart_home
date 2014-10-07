@@ -19,9 +19,9 @@ $context->conditions = array(
 $context->reactions = array(
   'block' => array(
     'blocks' => array(
-      'bean-jumpstart-lead-text-no-body' => array(
+      'bean-jumpstart-lead-text-with-body' => array(
         'module' => 'bean',
-        'delta' => 'jumpstart-lead-text-no-body',
+        'delta' => 'jumpstart-lead-text-with-body',
         'region' => 'main_top',
         'weight' => '-10',
       ),
