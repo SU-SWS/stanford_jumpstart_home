@@ -34,7 +34,7 @@ $context->reactions = array(
       'bean-homepage-about-block' => array(
         'module' => 'bean',
         'delta' => 'homepage-about-block',
-        'region' => 'sidebar_first',
+        'region' => 'content_row3',
         'weight' => '-25',
       ),
       'bean-flexi-block-for-the-home-page' => array(
