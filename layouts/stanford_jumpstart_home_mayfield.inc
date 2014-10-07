@@ -22,13 +22,13 @@ $context->reactions = array(
       'bean-jumpstart-lead-text-no-body' => array(
         'module' => 'bean',
         'delta' => 'jumpstart-lead-text-no-body',
-        'region' => 'content_top',
+        'region' => 'main_top',
         'weight' => '-10',
       ),
       'bean-jumpstart-homepage-testimonial-b' => array(
         'module' => 'bean',
         'delta' => 'jumpstart-homepage-testimonial-b',
-        'region' => 'content_top',
+        'region' => 'main_top',
         'weight' => '-9',
       ),
       'bean-homepage-about-block' => array(

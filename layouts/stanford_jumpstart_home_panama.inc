@@ -19,6 +19,18 @@ $context->conditions = array(
 $context->reactions = array(
   'block' => array(
     'blocks' => array(
+      'bean-jumpstart-lead-text-with-body' => array(
+        'module' => 'bean',
+        'delta' => 'jumpstart-lead-text-with-body',
+        'region' => 'main_top',
+        'weight' => '-11',
+      ),
+      'bean-homepage-banner-image' => array(
+        'module' => 'bean',
+        'delta' => 'homepage-banner-image',
+        'region' => 'main_top',
+        'weight' => '-10',
+      ),
       'bean-homepage-about-block' => array(
         'module' => 'bean',
         'delta' => 'homepage-about-block',
@@ -28,20 +40,14 @@ $context->reactions = array(
       'bean-flexi-block-for-the-home-page' => array(
         'module' => 'bean',
         'delta' => 'flexi-block-for-the-home-page',
-        'region' => 'sidebar_first',
+        'region' => 'content_row3',
         'weight' => '-24',
       ),
-      'bean-homepage-banner-image' => array(
+      'bean-jumpstart-homepage-announcements' => array(
         'module' => 'bean',
-        'delta' => 'homepage-banner-image',
-        'region' => 'content_top',
-        'weight' => '-10',
-      ),
-      'bean-jumpstart-lead-text-with-body' => array(
-        'module' => 'bean',
-        'delta' => 'jumpstart-lead-text-with-body',
-        'region' => 'content',
-        'weight' => '-10',
+        'delta' => 'jumpstart-homepage-announcements',
+        'region' => 'content_row3',
+        'weight' => '-23',
       ),
     ),
   ),
