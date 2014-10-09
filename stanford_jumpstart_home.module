@@ -242,6 +242,12 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
       '#value' => $config['context'],
     );
 
+    // Body class
+    $form['choosehome']['layouts'][$key]["body_class"] = array(
+      '#type' => "hidden",
+      '#value' => $config['class'],
+    );
+
     // State machine, or just form states.
     $form['choosehome']['layouts'][$key]["selectedstate"] = array(
       '#type' => 'hidden',
@@ -327,6 +333,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
     unset($config['thumb']);
     unset($config['title']);
     unset($config['description']);
+    unset($config['class']);
 
     if (count($config) >= 1) {
       $form['choosehome']['layouts'][$key]['submit'] = array(
@@ -381,9 +388,14 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
 function stanford_jumpstart_homepage_dashboard_form_submit($form, $form_state) {
 
   global $user;
+  $active = variable_get('stanford_jumpstart_home_active', '');
 
   $values = $form_state['values'];
   foreach ($values['layouts'] as $key => $config) {
+
+    if ($key == $active) {
+      variable_set('stanford_jumpstart_home_active_body_class', $config['body_class']);
+    }
 
     if (!empty($config['background_image']) && is_numeric($config['background_image'])) {
       $fid = $config['background_image'];
@@ -484,6 +496,7 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
   global $theme;
 
   $context_name = variable_get('stanford_jumpstart_home_active', '');
+  $body_class = variable_get('stanford_jumpstart_home_active_body_class', '');
 
   // No active context set.
   if (empty($context_name)) {
@@ -492,8 +505,8 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
 
   $settings = variable_get('sjh_' . $context_name, null);
   $vars['classes_array'][] = "active-home-context";
-  $vars['classes_array'][] = drupal_clean_css_identifier($context_name);
-  $vars['classes'] .= " active-home-context " . drupal_clean_css_identifier($context_name);
+  $vars['classes_array'][] = drupal_clean_css_identifier($body_class);
+  $vars['classes'] .= " active-home-context " . drupal_clean_css_identifier($body_class);
 
   // Missing settings.
   if (is_null($settings)) {
@@ -507,9 +520,6 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
   $header_file = file_load($header_fid);
 
   if (!empty($background_file)) {
-    // $vars['body_bg_type'] = 'photobg';
-    // $vars['body_bg_classes'] = 'bodybg';
-    // $vars['body_bg_path'] = $background_file->uri;
     $vars['header_bkg_style'] = "header-bkg-image";
     $vars['header_bkg'] = 'header-bkg';
     $vars['header_bkg_path'] = $background_file->uri;
