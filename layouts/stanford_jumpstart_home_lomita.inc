@@ -22,13 +22,13 @@ $context->reactions = array(
       'bean-jumpstart-lead-text-with-body' => array(
         'module' => 'bean',
         'delta' => 'jumpstart-lead-text-with-body',
-        'region' => 'content_top',
+        'region' => 'main_top',
         'weight' => '-10',
       ),
       'bean-jumpstart-postcard-with-video' => array(
         'module' => 'bean',
         'delta' => 'jumpstart-postcard-with-video',
-        'region' => 'content_top',
+        'region' => 'main_top',
         'weight' => '-9',
       ),
     ),

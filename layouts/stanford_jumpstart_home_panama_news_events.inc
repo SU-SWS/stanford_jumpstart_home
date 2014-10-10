@@ -19,41 +19,35 @@ $context->conditions = array(
 $context->reactions = array(
   'block' => array(
     'blocks' => array(
-      'bean-homepage-about-block' => array(
+      'bean-jumpstart-lead-text-with-body' => array(
         'module' => 'bean',
-        'delta' => 'homepage-about-block',
-        'region' => 'sidebar_first',
-        'weight' => '-25',
-      ),
-      'bean-flexi-block-for-the-home-page' => array(
-        'module' => 'bean',
-        'delta' => 'flexi-block-for-the-home-page',
-        'region' => 'sidebar_first',
-        'weight' => '-24',
+        'delta' => 'jumpstart-lead-text-with-body',
+        'region' => 'main_top',
+        'weight' => '-11',
       ),
       'bean-homepage-banner-image' => array(
         'module' => 'bean',
         'delta' => 'homepage-banner-image',
-        'region' => 'content_top',
+        'region' => 'main_top',
         'weight' => '-10',
+      ),
+      'bean-homepage-about-block' => array(
+        'module' => 'bean',
+        'delta' => 'homepage-about-block',
+        'region' => 'content_row3',
+        'weight' => '-25',
       ),
       'views-f73ff55b085ea49217d347de6630cd5a' => array(
         'module' => 'views',
         'delta' => 'f73ff55b085ea49217d347de6630cd5a',
         'region' => 'content_row3',
-        'weight' => '-10',
+        'weight' => '-24',
       ),
       'views-stanford_events_views-block' => array(
         'module' => 'views',
         'delta' => 'stanford_events_views-block',
         'region' => 'content_row3',
-        'weight' => '-9',
-      ),
-      'bean-jumpstart-affiliated-programs' => array(
-        'module' => 'bean',
-        'delta' => 'jumpstart-affiliated-programs',
-        'region' => 'content_row3',
-        'weight' => '-8',
+        'weight' => '-23',
       ),
     ),
   ),

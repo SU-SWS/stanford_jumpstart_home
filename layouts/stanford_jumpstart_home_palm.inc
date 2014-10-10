@@ -22,7 +22,7 @@ $context->reactions = array(
       'bean-jumpstart-homepage-tall-banner' => array(
         'module' => 'bean',
         'delta' => 'jumpstart-homepage-tall-banner',
-        'region' => 'content_top',
+        'region' => 'main_top',
         'weight' => '-10',
       ),
       'bean-homepage-about-block' => array(
