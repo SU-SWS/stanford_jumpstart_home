@@ -228,12 +228,40 @@
 .stanford-jumpstart-home-serra.style-custom-styles-cardinal {
 	.main-top, .site-main-menu, .header {
 		background: $cardinal_clr-header-bkg;
+		color: $cardinal_clr-page-bkg;
+	}
+	.main-top .more-link a,
+	.main-top a.more-link,
+	.main-top .big-text,
+	.main-top .infotext {
+		color: $cardinal_clr-page-bkg;
+	}
+	.main-top .more-link a:hover,
+	.main-top .more-link a:focus,
+	.main-top a.more-link:hover,
+	.main-top a.more-link:focus {
+		color: $cardinal_clr-page-bkg;
+		text-decoration: underline;
 	}
 }
 .stanford-jumpstart-home-serra.style-custom-styles-contrast {
 	.main-top, .site-main-menu, .header {
 		background: $contrast_clr-header-bkg;
+		color: $contrast_clr-page-bkg;
 	}
+	.main-top .more-link a,
+	.main-top a.more-link,
+	.main-top .big-text,
+	.main-top .infotext {
+		color: #b3995d;
+	}
+	.main-top .more-link a:hover,
+	.main-top .more-link a:focus,
+	.main-top a.more-link:hover,
+	.main-top a.more-link:focus {
+		color: $contrast_clr-page-bkg;
+		text-decoration: underline;
+	} 
 }
 .stanford-jumpstart-home-serra.style-custom-styles-dark {
 	.main-top, .site-main-menu, .header {
