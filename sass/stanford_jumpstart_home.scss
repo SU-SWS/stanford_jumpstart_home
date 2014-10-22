@@ -199,6 +199,12 @@
 		font-size: 1.3em;
 		line-height: 1.4em;
 	}
+	#block-bean-jumpstart-info-text-block {
+		margin-left: 16%;
+		@media (max-width: 767px) {
+	        margin-left: 0;
+	    }
+	}
 }
 .stanford-jumpstart-home-serra.style-custom-styles-bright {
 	.main-top, .site-main-menu, .header {
