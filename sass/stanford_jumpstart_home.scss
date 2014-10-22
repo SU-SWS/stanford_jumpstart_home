@@ -209,7 +209,21 @@
 .stanford-jumpstart-home-serra.style-custom-styles-bright {
 	.main-top, .site-main-menu, .header {
 		background: $bright_clr-header-bkg;
+		color: $bright_clr-page-bkg;
 	}
+	.main-top .more-link a,
+	.main-top a.more-link,
+	.main-top .big-text,
+	.main-top .infotext {
+		color: #ffce49;
+	}
+	.main-top .more-link a:hover,
+	.main-top .more-link a:focus,
+	.main-top a.more-link:hover,
+	.main-top a.more-link:focus {
+		color: $bright_clr-page-bkg;
+		text-decoration: underline;
+	} 
 }
 .stanford-jumpstart-home-serra.style-custom-styles-cardinal {
 	.main-top, .site-main-menu, .header {
