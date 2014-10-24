@@ -521,8 +521,9 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
   // ---------------------------------------------------------------------------
 
   // Try to load a file from the upload form
-  $background_fid = $settings['background_image'];
-  $background_file = file_load($background_fid);
+  if (isset($settings['background_image'])) {
+    $background_file = file_load($settings['background_image']);
+  }
 
   // If there is a file adjust the URI for the theme to use.
   if (isset($background_filie->uri)) {
@@ -545,8 +546,10 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
   // ---------------------------------------------------------------------------
 
   // Try to load a file from the upload form
-  $header_fid = $settings['header_image'];
-  $header_file = file_load($header_fid);
+
+  if (isset($settings['header_image'])) {
+    $header_file = file_load($settings['header_image']);
+  }
 
   // If there is a file adjust the URI for the theme to use.
   if (isset($header_file->uri)) {
