@@ -151,6 +151,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
   $filename = drupal_get_path('module', 'stanford_jumpstart_home') . "/stanford_jumpstart_home.info";
   $info = drupal_parse_info_file($filename);
   $layouts = $info['layout'];
+  // stanford_jumpstart_home_get_contexts(TRUE);
 
   $form['intro']['#markup'] = "<h5>" . t("Use the following options to customize the design and layout of your site. Choose a homepage layout, visual style, and font family") . "</h5>";
 

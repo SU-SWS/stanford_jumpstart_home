@@ -19,7 +19,6 @@ dependencies[] = ctools
 # layout[setting][background_image] = TRUE
 # layout[setting][color] = TRUE
 
-# The layouts.
 layout[stanford_jumpstart_home_panama][context] = "stanford_jumpstart_home_panama"
 layout[stanford_jumpstart_home_panama][thumb] = "js-home-panama.png"
 layout[stanford_jumpstart_home_panama][title] = "Panama"
