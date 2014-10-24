@@ -516,19 +516,31 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
   $background_fid = $settings['background_image'];
   $background_file = file_load($background_fid);
 
+  if (isset($background_filie->uri)) {
+    $background_file->uri = file_create_url($background_file->uri);
+  }
+
   $header_fid = $settings['header_image'];
   $header_file = file_load($header_fid);
+  if (isset($header_file->uri)) {
+    $header_file->uri = file_create_url($header_file->uri);
+  }
+
+  if (empty($header_file)) {
+    $header_file = new stdClass();
+    $header_file->uri = variable_get("stanford_jumpstart_home_default_header_image", drupal_get_path("module", "stanford_jumpstart_home") . "/img/header-background-default.jpg");
+  }
 
   if (!empty($background_file)) {
     $vars['header_bkg_style'] = "header-bkg-image";
     $vars['header_bkg'] = 'header-bkg';
-    $vars['header_bkg_path'] = $background_file->uri;
+    $vars['header_bkg_path'] = url($background_file->uri, array('absolute'=>TRUE));
   }
 
-  if (!empty($settings['header_image'])) {
+  if (!empty($header_file)) {
     $vars['header_bkg_style'] = "header-bkg-image";
     $vars['header_bkg'] = 'header-bkg';
-    $vars['header_bkg_path'] = $header_file->uri;
+    $vars['header_bkg_path'] = url($header_file->uri, array('absolute'=>TRUE));
   }
 
   if (isset($settings['light_dark'])) {
