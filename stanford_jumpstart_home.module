@@ -510,6 +510,9 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
   foreach ($body_classes as $body_class) {
     $vars['classes_array'][] = drupal_clean_css_identifier($body_class);
   }
+  if (!isset($vars['classes'])) {
+    $vars['classes'] = "";
+  }
   $vars['classes'] .= " active-home-context " . drupal_clean_css_identifier($body_class);
 
   // Missing settings.
