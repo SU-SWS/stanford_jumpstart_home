@@ -372,6 +372,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
   $form['submit'] = array(
     '#type' => 'submit',
     '#value' => t('Save settings'),
+    '#weight' => 9999,
     '#prefix' => "<div style=\"clear: both;\">",
     '#suffix' => "</div>",
   );
