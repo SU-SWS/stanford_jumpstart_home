@@ -78,4 +78,4 @@ layout[stanford_jumpstart_home_lomita][title] = "Lomita"
 layout[stanford_jumpstart_home_lomita][description] = "<ul><li>Big Text block with description</li><li>Flexible block with optional video</li></ul>"
 layout[stanford_jumpstart_home_lomita][light_dark] = TRUE
 layout[stanford_jumpstart_home_lomita][background_image] = TRUE
-layout[stanford_jumpstart_home_lomita][class] = "stanford-jumpstart-home-lomita"
+layout[stanford_jumpstart_home_lomita][class] = "stanford-jumpstart-home-lomita header-bkg-style-frontbleed"
