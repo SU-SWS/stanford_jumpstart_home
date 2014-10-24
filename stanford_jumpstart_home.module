@@ -516,36 +516,56 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
     return;
   }
 
+  // Background Image File Upload
+  // ---------------------------------------------------------------------------
+
+  // Try to load a file from the upload form
   $background_fid = $settings['background_image'];
   $background_file = file_load($background_fid);
 
+  // If there is a file adjust the URI for the theme to use.
   if (isset($background_filie->uri)) {
     $background_file->uri = file_create_url($background_file->uri);
   }
-
-  $header_fid = $settings['header_image'];
-  $header_file = file_load($header_fid);
-  if (isset($header_file->uri)) {
-    $header_file->uri = file_create_url($header_file->uri);
+  else {
+    // If there is no file and the setting is available provide a default image.
+    $background_file = new stdClass();
+    $background_file->uri = variable_get("stanford_jumpstart_home_default_header_image", drupal_get_path("module", "stanford_jumpstart_home") . "/img/header-background-default.jpg");
   }
 
-  if (empty($header_file)) {
-    $header_file = new stdClass();
-    $header_file->uri = variable_get("stanford_jumpstart_home_default_header_image", drupal_get_path("module", "stanford_jumpstart_home") . "/img/header-background-default.jpg");
-  }
-
-  if (!empty($background_file)) {
+  // If not empty and a setting exists
+  if (isset($settings['background_image'])) {
     $vars['header_bkg_style'] = "header-bkg-image";
     $vars['header_bkg'] = 'header-bkg';
     $vars['header_bkg_path'] = url($background_file->uri, array('absolute'=>TRUE));
   }
 
-  if (!empty($header_file)) {
+  // Header Image File Upload
+  // ---------------------------------------------------------------------------
+
+  // Try to load a file from the upload form
+  $header_fid = $settings['header_image'];
+  $header_file = file_load($header_fid);
+
+  // If there is a file adjust the URI for the theme to use.
+  if (isset($header_file->uri)) {
+    $header_file->uri = file_create_url($header_file->uri);
+  }
+  else {
+    // If there is no file and the setting is available provide a default image.
+    $header_file = new stdClass();
+    $header_file->uri = variable_get("stanford_jumpstart_home_default_header_image", drupal_get_path("module", "stanford_jumpstart_home") . "/img/header-background-default.jpg");
+  }
+
+  // If not empty and a setting exists
+  if (isset($settings['header_image'])) {
     $vars['header_bkg_style'] = "header-bkg-image";
     $vars['header_bkg'] = 'header-bkg';
     $vars['header_bkg_path'] = url($header_file->uri, array('absolute'=>TRUE));
   }
 
+  // Light or dark theme option
+  // ---------------------------------------------------------------------------
   if (isset($settings['light_dark'])) {
     if ($settings['light_dark'] == "light") {
       $vars['header_bkg_text'] = "header-bkg-text-light";
