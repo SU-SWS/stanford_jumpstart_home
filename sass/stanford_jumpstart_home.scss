@@ -158,6 +158,10 @@
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal {
 	.navbar {
 		background: $cardinal_clr-header-bkg;
+		padding: 0.5em;
+	    .nav > li > a {
+	        padding: 0.25em 0.5em;
+	    }
 	}
 	.header {
 		background: transparent;
