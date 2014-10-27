@@ -210,6 +210,23 @@
 	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
 		background-color: $bright_clr-header-bkg;
 	}
+	#site-name a, #site-name a:hover, #site-name a, #site-name a:focus, #site-title-first-line a, #site-title-first-line a:hover, #site-title-first-line a:focus, #site-title-second-line a, #site-title-second-line a:hover, #site-title-second-line a:focus {
+		color: $cardinal_clr-text;
+	}
+	#header #logo {
+		border-right: 1px solid $cardinal_clr-text;
+		background-image: url("../../../../themes/stanford_framework/logo.png");
+		background-repeat: no-repeat;
+		background-size: 180px auto;
+	}
+	#header #logo a {
+		display: inline-block;
+	}
+	#header #logo img {
+	    left: -1000px;
+	    position: relative;
+	    top: -1000px;
+	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal {
 	.navbar {
@@ -243,6 +260,23 @@
 	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
 		background-color: $contrast_clr-header-bkg;
 	}
+	#site-name a, #site-name a:hover, #site-name a, #site-name a:focus, #site-title-first-line a, #site-title-first-line a:hover, #site-title-first-line a:focus, #site-title-second-line a, #site-title-second-line a:hover, #site-title-second-line a:focus {
+		color: $cardinal_clr-text;
+	}
+	#header #logo {
+		border-right: 1px solid $cardinal_clr-text;
+		background-image: url("../../../../themes/stanford_framework/logo.png");
+		background-repeat: no-repeat;
+		background-size: 180px auto;
+	}
+	#header #logo a {
+		display: inline-block;
+	}
+	#header #logo img {
+	    left: -1000px;
+	    position: relative;
+	    top: -1000px;
+	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-dark {
 	.navbar {
@@ -262,10 +296,10 @@
 }
 .stanford-jumpstart-home-palm.style-custom-styles-plain {
 	.navbar {
-		background: $plain_clr-header-bkg;
+		background: $plain_clr-well-bkg;
 	}
 	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
-		background-color: $plain_clr-header-bkg;
+		background-color: $plain_clr-well-bkg;
 	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-rich {

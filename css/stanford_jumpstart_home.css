@@ -209,78 +209,120 @@
 .stanford-jumpstart-home-palm.style-custom-styles-bright #block-bean-jumpstart-homepage-tall-banner .border-simple img {
   background-color: #53284f;
 }
+/* line 213, ../sass/stanford_jumpstart_home.scss */
+.stanford-jumpstart-home-palm.style-custom-styles-bright #site-name a, .stanford-jumpstart-home-palm.style-custom-styles-bright #site-name a:hover, .stanford-jumpstart-home-palm.style-custom-styles-bright #site-name a, .stanford-jumpstart-home-palm.style-custom-styles-bright #site-name a:focus, .stanford-jumpstart-home-palm.style-custom-styles-bright #site-title-first-line a, .stanford-jumpstart-home-palm.style-custom-styles-bright #site-title-first-line a:hover, .stanford-jumpstart-home-palm.style-custom-styles-bright #site-title-first-line a:focus, .stanford-jumpstart-home-palm.style-custom-styles-bright #site-title-second-line a, .stanford-jumpstart-home-palm.style-custom-styles-bright #site-title-second-line a:hover, .stanford-jumpstart-home-palm.style-custom-styles-bright #site-title-second-line a:focus {
+  color: #333333;
+}
+/* line 216, ../sass/stanford_jumpstart_home.scss */
+.stanford-jumpstart-home-palm.style-custom-styles-bright #header #logo {
+  border-right: 1px solid #333333;
+  background-image: url("../../../../themes/stanford_framework/logo.png");
+  background-repeat: no-repeat;
+  background-size: 180px auto;
+}
+/* line 222, ../sass/stanford_jumpstart_home.scss */
+.stanford-jumpstart-home-palm.style-custom-styles-bright #header #logo a {
+  display: inline-block;
+}
+/* line 225, ../sass/stanford_jumpstart_home.scss */
+.stanford-jumpstart-home-palm.style-custom-styles-bright #header #logo img {
+  left: -1000px;
+  position: relative;
+  top: -1000px;
+}
 
-/* line 215, ../sass/stanford_jumpstart_home.scss */
+/* line 232, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal .navbar {
   background: #8c1515;
 }
-/* line 218, ../sass/stanford_jumpstart_home.scss */
+/* line 235, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal #block-bean-jumpstart-homepage-tall-banner .border-simple img {
   background-color: #8c1515;
 }
-/* line 221, ../sass/stanford_jumpstart_home.scss */
+/* line 238, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal #site-name a, .stanford-jumpstart-home-palm.style-custom-styles-cardinal #site-name a:hover, .stanford-jumpstart-home-palm.style-custom-styles-cardinal #site-name a, .stanford-jumpstart-home-palm.style-custom-styles-cardinal #site-name a:focus, .stanford-jumpstart-home-palm.style-custom-styles-cardinal #site-title-first-line a, .stanford-jumpstart-home-palm.style-custom-styles-cardinal #site-title-first-line a:hover, .stanford-jumpstart-home-palm.style-custom-styles-cardinal #site-title-first-line a:focus, .stanford-jumpstart-home-palm.style-custom-styles-cardinal #site-title-second-line a, .stanford-jumpstart-home-palm.style-custom-styles-cardinal #site-title-second-line a:hover, .stanford-jumpstart-home-palm.style-custom-styles-cardinal #site-title-second-line a:focus {
   color: #333333;
 }
-/* line 224, ../sass/stanford_jumpstart_home.scss */
+/* line 241, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal #header #logo {
   border-right: 1px solid #333333;
   background-image: url("../../../../themes/stanford_framework/logo.png");
   background-repeat: no-repeat;
   background-size: 180px auto;
 }
-/* line 230, ../sass/stanford_jumpstart_home.scss */
+/* line 247, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal #header #logo a {
   display: inline-block;
 }
-/* line 233, ../sass/stanford_jumpstart_home.scss */
+/* line 250, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal #header #logo img {
   left: -1000px;
   position: relative;
   top: -1000px;
 }
 
-/* line 240, ../sass/stanford_jumpstart_home.scss */
+/* line 257, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-contrast .navbar {
   background: #333333;
 }
-/* line 243, ../sass/stanford_jumpstart_home.scss */
+/* line 260, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-contrast #block-bean-jumpstart-homepage-tall-banner .border-simple img {
   background-color: #333333;
 }
+/* line 263, ../sass/stanford_jumpstart_home.scss */
+.stanford-jumpstart-home-palm.style-custom-styles-contrast #site-name a, .stanford-jumpstart-home-palm.style-custom-styles-contrast #site-name a:hover, .stanford-jumpstart-home-palm.style-custom-styles-contrast #site-name a, .stanford-jumpstart-home-palm.style-custom-styles-contrast #site-name a:focus, .stanford-jumpstart-home-palm.style-custom-styles-contrast #site-title-first-line a, .stanford-jumpstart-home-palm.style-custom-styles-contrast #site-title-first-line a:hover, .stanford-jumpstart-home-palm.style-custom-styles-contrast #site-title-first-line a:focus, .stanford-jumpstart-home-palm.style-custom-styles-contrast #site-title-second-line a, .stanford-jumpstart-home-palm.style-custom-styles-contrast #site-title-second-line a:hover, .stanford-jumpstart-home-palm.style-custom-styles-contrast #site-title-second-line a:focus {
+  color: #333333;
+}
+/* line 266, ../sass/stanford_jumpstart_home.scss */
+.stanford-jumpstart-home-palm.style-custom-styles-contrast #header #logo {
+  border-right: 1px solid #333333;
+  background-image: url("../../../../themes/stanford_framework/logo.png");
+  background-repeat: no-repeat;
+  background-size: 180px auto;
+}
+/* line 272, ../sass/stanford_jumpstart_home.scss */
+.stanford-jumpstart-home-palm.style-custom-styles-contrast #header #logo a {
+  display: inline-block;
+}
+/* line 275, ../sass/stanford_jumpstart_home.scss */
+.stanford-jumpstart-home-palm.style-custom-styles-contrast #header #logo img {
+  left: -1000px;
+  position: relative;
+  top: -1000px;
+}
 
-/* line 248, ../sass/stanford_jumpstart_home.scss */
+/* line 282, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-dark .navbar {
   background: #282724;
 }
-/* line 251, ../sass/stanford_jumpstart_home.scss */
+/* line 285, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-dark #block-bean-jumpstart-homepage-tall-banner .border-simple img {
   background-color: #282724;
 }
 
-/* line 256, ../sass/stanford_jumpstart_home.scss */
+/* line 290, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-light .navbar {
   background: #f8f7f2;
 }
-/* line 259, ../sass/stanford_jumpstart_home.scss */
+/* line 293, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-light #block-bean-jumpstart-homepage-tall-banner .border-simple img {
   background-color: #f8f7f2;
 }
 
-/* line 264, ../sass/stanford_jumpstart_home.scss */
+/* line 298, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-plain .navbar {
-  background: white;
+  background: #e9e9e9;
 }
-/* line 267, ../sass/stanford_jumpstart_home.scss */
+/* line 301, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-plain #block-bean-jumpstart-homepage-tall-banner .border-simple img {
-  background-color: white;
+  background-color: #e9e9e9;
 }
 
-/* line 272, ../sass/stanford_jumpstart_home.scss */
+/* line 306, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-rich .navbar {
   background: #d5d0c0;
 }
-/* line 275, ../sass/stanford_jumpstart_home.scss */
+/* line 309, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-rich #block-bean-jumpstart-homepage-tall-banner .border-simple img {
   background-color: #d5d0c0;
 }
@@ -292,56 +334,56 @@
 	- Two-column mission text blocks 
 	- Three blocks
 ******************************************/
-/* line 290, ../sass/stanford_jumpstart_home.scss */
+/* line 324, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra .site-main-menu, .stanford-jumpstart-home-serra .navbar {
   background: transparent;
 }
-/* line 293, ../sass/stanford_jumpstart_home.scss */
+/* line 327, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra .main {
   padding-top: 0;
 }
-/* line 296, ../sass/stanford_jumpstart_home.scss */
+/* line 330, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra .site-main-menu {
   border: 0;
 }
-/* line 299, ../sass/stanford_jumpstart_home.scss */
+/* line 333, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra .main-top {
   padding-top: 2em;
   margin-bottom: 2em;
 }
-/* line 303, ../sass/stanford_jumpstart_home.scss */
+/* line 337, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra .mission-block {
   font-size: 1.3em;
   line-height: 1.4em;
 }
-/* line 307, ../sass/stanford_jumpstart_home.scss */
+/* line 341, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra #block-bean-jumpstart-info-text-block {
   margin-left: 16%;
 }
 @media (max-width: 767px) {
-  /* line 307, ../sass/stanford_jumpstart_home.scss */
+  /* line 341, ../sass/stanford_jumpstart_home.scss */
   .stanford-jumpstart-home-serra #block-bean-jumpstart-info-text-block {
     margin-left: 0;
   }
 }
 
-/* line 315, ../sass/stanford_jumpstart_home.scss */
+/* line 349, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-bright .main-top {
   border-bottom: 1px solid #53284f;
 }
-/* line 318, ../sass/stanford_jumpstart_home.scss */
+/* line 352, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-bright .main-top, .stanford-jumpstart-home-serra.style-custom-styles-bright .site-main-menu, .stanford-jumpstart-home-serra.style-custom-styles-bright .header {
   background: #53284f;
   color: white;
 }
-/* line 325, ../sass/stanford_jumpstart_home.scss */
+/* line 359, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-bright .main-top .more-link a,
 .stanford-jumpstart-home-serra.style-custom-styles-bright .main-top a.more-link,
 .stanford-jumpstart-home-serra.style-custom-styles-bright .main-top .big-text,
 .stanford-jumpstart-home-serra.style-custom-styles-bright .main-top .infotext {
   color: #ffce49;
 }
-/* line 331, ../sass/stanford_jumpstart_home.scss */
+/* line 365, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-bright .main-top .more-link a:hover,
 .stanford-jumpstart-home-serra.style-custom-styles-bright .main-top .more-link a:focus,
 .stanford-jumpstart-home-serra.style-custom-styles-bright .main-top a.more-link:hover,
@@ -350,23 +392,23 @@
   text-decoration: underline;
 }
 
-/* line 337, ../sass/stanford_jumpstart_home.scss */
+/* line 371, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-cardinal .main-top {
   border-bottom: 1px solid #8c1515;
 }
-/* line 340, ../sass/stanford_jumpstart_home.scss */
+/* line 374, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-cardinal .main-top, .stanford-jumpstart-home-serra.style-custom-styles-cardinal .site-main-menu, .stanford-jumpstart-home-serra.style-custom-styles-cardinal .header {
   background: #8c1515;
   color: white;
 }
-/* line 347, ../sass/stanford_jumpstart_home.scss */
+/* line 381, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-cardinal .main-top .more-link a,
 .stanford-jumpstart-home-serra.style-custom-styles-cardinal .main-top a.more-link,
 .stanford-jumpstart-home-serra.style-custom-styles-cardinal .main-top .big-text,
 .stanford-jumpstart-home-serra.style-custom-styles-cardinal .main-top .infotext {
   color: white;
 }
-/* line 353, ../sass/stanford_jumpstart_home.scss */
+/* line 387, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-cardinal .main-top .more-link a:hover,
 .stanford-jumpstart-home-serra.style-custom-styles-cardinal .main-top .more-link a:focus,
 .stanford-jumpstart-home-serra.style-custom-styles-cardinal .main-top a.more-link:hover,
@@ -375,23 +417,23 @@
   text-decoration: underline;
 }
 
-/* line 359, ../sass/stanford_jumpstart_home.scss */
+/* line 393, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-contrast .main-top {
   border-bottom: 1px solid transparent;
 }
-/* line 362, ../sass/stanford_jumpstart_home.scss */
+/* line 396, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-contrast .main-top, .stanford-jumpstart-home-serra.style-custom-styles-contrast .site-main-menu, .stanford-jumpstart-home-serra.style-custom-styles-contrast .header {
   background: #333333;
   color: white;
 }
-/* line 369, ../sass/stanford_jumpstart_home.scss */
+/* line 403, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-contrast .main-top .more-link a,
 .stanford-jumpstart-home-serra.style-custom-styles-contrast .main-top a.more-link,
 .stanford-jumpstart-home-serra.style-custom-styles-contrast .main-top .big-text,
 .stanford-jumpstart-home-serra.style-custom-styles-contrast .main-top .infotext {
   color: #b3995d;
 }
-/* line 375, ../sass/stanford_jumpstart_home.scss */
+/* line 409, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-contrast .main-top .more-link a:hover,
 .stanford-jumpstart-home-serra.style-custom-styles-contrast .main-top .more-link a:focus,
 .stanford-jumpstart-home-serra.style-custom-styles-contrast .main-top a.more-link:hover,
@@ -400,38 +442,38 @@
   text-decoration: underline;
 }
 
-/* line 381, ../sass/stanford_jumpstart_home.scss */
+/* line 415, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-dark .main-top {
   border-bottom: 1px solid #232220;
 }
-/* line 384, ../sass/stanford_jumpstart_home.scss */
+/* line 418, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-dark .main-top, .stanford-jumpstart-home-serra.style-custom-styles-dark .site-main-menu, .stanford-jumpstart-home-serra.style-custom-styles-dark .header {
   background: #282724;
 }
 
-/* line 389, ../sass/stanford_jumpstart_home.scss */
+/* line 423, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-light .main-top {
   border-bottom: 1px solid #e9e6df;
 }
-/* line 392, ../sass/stanford_jumpstart_home.scss */
+/* line 426, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-light .main-top, .stanford-jumpstart-home-serra.style-custom-styles-light .site-main-menu, .stanford-jumpstart-home-serra.style-custom-styles-light .header {
   background: #f8f7f2;
 }
 
-/* line 397, ../sass/stanford_jumpstart_home.scss */
+/* line 431, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-plain .main-top {
   border-bottom: 1px solid transparent;
 }
-/* line 400, ../sass/stanford_jumpstart_home.scss */
+/* line 434, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-plain .main-top, .stanford-jumpstart-home-serra.style-custom-styles-plain .site-main-menu, .stanford-jumpstart-home-serra.style-custom-styles-plain .header {
   background: white;
 }
 
-/* line 405, ../sass/stanford_jumpstart_home.scss */
+/* line 439, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-rich .main-top {
   border-bottom: 1px solid #d5d0c0;
 }
-/* line 408, ../sass/stanford_jumpstart_home.scss */
+/* line 442, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-serra.style-custom-styles-rich .main-top, .stanford-jumpstart-home-serra.style-custom-styles-rich .site-main-menu, .stanford-jumpstart-home-serra.style-custom-styles-rich .header {
   background: #d5d0c0;
 }
