@@ -287,6 +287,18 @@
 	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
 		background-color: $dark_clr-header-bkg;
 	}
+	.site-main-menu {
+	    .navbar .nav > .active > a, 
+	    .navbar .nav > .active > a:hover, 
+	    .navbar .nav > .active > a:focus, 
+	    .navbar .nav > li > a:focus, 
+	    .navbar .nav > li > a:hover,
+	    .navbar .nav > .active-trail > a {
+	        color: $dark_clr-header-bkg;
+	        background: $dark_clr-menu-text-hvr;
+	        border: 0;
+	    }
+	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-light {
 	.navbar {
@@ -304,6 +316,7 @@
 	    .navbar .nav > .active-trail > a {
 	        color: $light_clr-menu-text-hvr;
 	        background: $light_clr-menu-link-border;
+	        border: 0;
 	    }
 	}
 }
@@ -314,6 +327,18 @@
 	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
 		background-color: $plain_clr-well-bkg;
 	}
+	.site-main-menu {
+	    .navbar .nav > .active > a, 
+	    .navbar .nav > .active > a:hover, 
+	    .navbar .nav > .active > a:focus, 
+	    .navbar .nav > li > a:focus, 
+	    .navbar .nav > li > a:hover,
+	    .navbar .nav > .active-trail > a {
+	        color: $plain_clr-page-bkg;
+	        background: $plain_clr-menu-text-hvr;
+	        border: 0;
+	    }
+	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-rich {
 	.navbar {
@@ -321,6 +346,18 @@
 	}
 	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
 		background-color: $rich_clr-header-bkg;
+	}
+	.site-main-menu {
+	    .navbar .nav > .active > a, 
+	    .navbar .nav > .active > a:hover, 
+	    .navbar .nav > .active > a:focus, 
+	    .navbar .nav > li > a:focus, 
+	    .navbar .nav > li > a:hover,
+	    .navbar .nav > .active-trail > a {
+	        color: $rich_clr-page-bkg;
+	        background: $rich_clr-menu-link-border;
+	        border: 0;
+	    }
 	}
 }
 
