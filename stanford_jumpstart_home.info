@@ -16,7 +16,6 @@ dependencies[] = ctools
 # Example settings
 # layout[setting][header_image] = TRUE
 # layout[setting][light_dark] = TRUE
-# layout[setting][background_image] = TRUE
 # layout[setting][color] = TRUE
 
 layout[stanford_jumpstart_home_panama][context] = "stanford_jumpstart_home_panama"
@@ -76,5 +75,5 @@ layout[stanford_jumpstart_home_lomita][thumb] = "js-home-lomita.png"
 layout[stanford_jumpstart_home_lomita][title] = "Lomita"
 layout[stanford_jumpstart_home_lomita][description] = "<ul><li>Big Text block with description</li><li>Flexible block with optional video</li></ul>"
 layout[stanford_jumpstart_home_lomita][light_dark] = TRUE
-layout[stanford_jumpstart_home_lomita][background_image] = TRUE
+layout[stanford_jumpstart_home_lomita][header_image] = TRUE
 layout[stanford_jumpstart_home_lomita][class] = "stanford-jumpstart-home-lomita header-bkg-style-frontbleed"
