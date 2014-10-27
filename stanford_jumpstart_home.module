@@ -577,6 +577,31 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
     if ($settings['light_dark'] == "light") {
       $vars['header_bkg_text'] = "header-bkg-text-light";
     }
+    else {
+      $vars['header_bkg_text'] = "header-bkg-text-dark";
+    }
   }
 
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function stanford_jumpstart_home_preprocess_page(&$vars) {
+  $context_name = variable_get('stanford_jumpstart_home_active', '');
+  $settings = variable_get('sjh_' . $context_name, null);
+
+  if (isset($settings['header_image'])) {
+    $vars['header_bkg'] = 'header-bkg';
+  }
+
+  // Color settings.
+  if (isset($settings['light_dark'])) {
+    if ($settings['light_dark'] == "light") {
+      $vars['header_bkg_text'] = "header-bkg-text-light";
+    }
+    else {
+      $vars['header_bkg_text'] = "header-bkg-text-dark";
+    }
+  }
 }
