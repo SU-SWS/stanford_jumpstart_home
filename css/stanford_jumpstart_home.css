@@ -207,7 +207,7 @@
 /* line 209, ../sass/stanford_jumpstart_home.scss */
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal #header #logo {
   border-right: 1px solid #333333;
-  background-image: url("../../themes/stanford_framework/logo.png");
+  background-image: url("../../../../themes/stanford_framework/logo.png");
   background-repeat: no-repeat;
   background-size: 180px auto;
 }
