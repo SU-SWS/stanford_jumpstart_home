@@ -187,9 +187,17 @@
 		background: transparent;
 	}
 }
+.front.stanford-jumpstart-home-palm {
+	.main {
+		padding-top: 0;
+	}
+}
 .stanford-jumpstart-home-palm.style-custom-styles-bright {
 	.navbar {
 		background: $bright_clr-header-bkg;
+	}
+	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
+		background-color: $bright_clr-header-bkg;
 	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal {
@@ -199,6 +207,9 @@
 	    .nav > li > a {
 	        padding: 0.25em 0.5em;
 	    }
+	}
+	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
+		background-color: $cardinal_clr-header-bkg;
 	}
 	.header {
 		background: transparent;
@@ -225,25 +236,40 @@
 	.navbar {
 		background: $contrast_clr-header-bkg;
 	}
+	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
+		background-color: $contrast_clr-header-bkg;
+	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-dark {
 	.navbar {
 		background: $dark_clr-header-bkg;
+	}
+	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
+		background-color: $dark_clr-header-bkg;
 	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-light {
 	.navbar {
 		background: $light_clr-header-bkg;
 	}
+	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
+		background-color: $light_clr-header-bkg;
+	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-plain {
 	.navbar {
 		background: $plain_clr-header-bkg;
 	}
+	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
+		background-color: $plain_clr-header-bkg;
+	}
 }
 .stanford-jumpstart-home-palm.style-custom-styles-rich {
 	.navbar {
-		background: $bright_clr-header-bkg;
+		background: $rich_clr-header-bkg;
+	}
+	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
+		background-color: $rich_clr-header-bkg;
 	}
 }
 
