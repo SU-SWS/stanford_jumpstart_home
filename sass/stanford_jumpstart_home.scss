@@ -245,6 +245,9 @@
 	}
 }
 .stanford-jumpstart-home-serra.style-custom-styles-bright {
+	.main-top {
+		border-bottom: 1px solid $bright_clr-line;
+	}
 	.main-top, .site-main-menu, .header {
 		background: $bright_clr-header-bkg;
 		color: $bright_clr-page-bkg;
@@ -264,6 +267,9 @@
 	} 
 }
 .stanford-jumpstart-home-serra.style-custom-styles-cardinal {
+	.main-top {
+		border-bottom: 1px solid $cardinal_clr-line;
+	}
 	.main-top, .site-main-menu, .header {
 		background: $cardinal_clr-header-bkg;
 		color: $cardinal_clr-page-bkg;
@@ -283,6 +289,9 @@
 	}
 }
 .stanford-jumpstart-home-serra.style-custom-styles-contrast {
+	.main-top {
+		border-bottom: 1px solid $contrast_clr-line;
+	}
 	.main-top, .site-main-menu, .header {
 		background: $contrast_clr-header-bkg;
 		color: $contrast_clr-page-bkg;
@@ -302,21 +311,33 @@
 	} 
 }
 .stanford-jumpstart-home-serra.style-custom-styles-dark {
+	.main-top {
+		border-bottom: 1px solid $dark_clr-line;
+	}
 	.main-top, .site-main-menu, .header {
 		background: $dark_clr-header-bkg;
 	}
 }
 .stanford-jumpstart-home-serra.style-custom-styles-light {
+	.main-top {
+		border-bottom: 1px solid $light_clr-line;
+	}
 	.main-top, .site-main-menu, .header {
 		background: $light_clr-header-bkg;
 	}
 }
 .stanford-jumpstart-home-serra.style-custom-styles-plain {
+	.main-top {
+		border-bottom: 1px solid $plain_clr-line;
+	}
 	.main-top, .site-main-menu, .header {
 		background: $plain_clr-header-bkg;
 	}
 }
 .stanford-jumpstart-home-serra.style-custom-styles-rich {
+	.main-top {
+		border-bottom: 1px solid $rich_clr-line;
+	}
 	.main-top, .site-main-menu, .header {
 		background: $rich_clr-header-bkg;
 	}
