@@ -272,23 +272,6 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
       );
     }
 
-    // Background Image Field
-    if (!empty($config['background_image'])) {
-      $form['choosehome']['layouts'][$key]['background_image'] = array(
-        '#title' => t('Background image'),
-        '#type' => 'managed_file',
-        '#description' => t('The uploaded image will be displayed on this layout as a background image.'),
-        '#default_value' => isset($options['background_image']) ? $options['background_image'] : "",
-        '#upload_location' => 'public://stanford_jumpstart_home/background/',
-        '#process' => array('stanford_jumpstart_home_process_file_managed'),
-        '#states' => array(
-          'invisible' => array(
-           ':input[name="layouts[' . $key . '][selectedstate]"]' => array('value' => 1),
-          ),
-        ),
-      );
-    }
-
     // Color picker
     if (!empty($config['color'])) {
       $form['choosehome']['layouts'][$key]['color'] = array(
@@ -399,18 +382,6 @@ function stanford_jumpstart_homepage_dashboard_form_submit($form, $form_state) {
       variable_set('stanford_jumpstart_home_active_body_class', $config['body_class']);
     }
 
-    if (!empty($config['background_image']) && is_numeric($config['background_image'])) {
-      $fid = $config['background_image'];
-      // Load the file via file.fid.
-      $file = file_load($fid);
-      // Change status to permanent.
-      $file->status = FILE_STATUS_PERMANENT;
-      // Save.
-      file_save($file);
-      // // Record that the module (in this example, user module) is using the file.
-      file_usage_add($file, 'user', 'user', $file->uid);
-    }
-
     if (!empty($config['header_image']) && is_numeric($config['header_image'])) {
       $fid = $config['header_image'];
       // Load the file via file.fid.
@@ -518,31 +489,6 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
   // Missing settings.
   if (is_null($settings)) {
     return;
-  }
-
-  // Background Image File Upload
-  // ---------------------------------------------------------------------------
-
-  // Try to load a file from the upload form
-  if (isset($settings['background_image'])) {
-    $background_file = file_load($settings['background_image']);
-  }
-
-  // If there is a file adjust the URI for the theme to use.
-  if (isset($background_filie->uri)) {
-    $background_file->uri = file_create_url($background_file->uri);
-  }
-  else {
-    // If there is no file and the setting is available provide a default image.
-    $background_file = new stdClass();
-    $background_file->uri = variable_get("stanford_jumpstart_home_default_header_image", drupal_get_path("module", "stanford_jumpstart_home") . "/img/header-background-default.jpg");
-  }
-
-  // If not empty and a setting exists
-  if (isset($settings['background_image'])) {
-    $vars['header_bkg_style'] = "header-bkg-image";
-    $vars['header_bkg'] = 'header-bkg';
-    $vars['header_bkg_path'] = url($background_file->uri, array('absolute'=>TRUE));
   }
 
   // Header Image File Upload
