@@ -186,6 +186,15 @@
 	.site-main-menu {
 		background: transparent;
 	}
+	.navbar {
+		padding: 0.5em;
+	    .nav > li > a {
+	        padding: 0.25em 0.5em;
+	    }
+	}
+	.header {
+		background: transparent;
+	}
 }
 .front.stanford-jumpstart-home-palm {
 	.main {
@@ -203,16 +212,9 @@
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal {
 	.navbar {
 		background: $cardinal_clr-header-bkg;
-		padding: 0.5em;
-	    .nav > li > a {
-	        padding: 0.25em 0.5em;
-	    }
 	}
 	#block-bean-jumpstart-homepage-tall-banner .border-simple img {
 		background-color: $cardinal_clr-header-bkg;
-	}
-	.header {
-		background: transparent;
 	}
 	#site-name a, #site-name a:hover, #site-name a, #site-name a:focus, #site-title-first-line a, #site-title-first-line a:hover, #site-title-first-line a:focus, #site-title-second-line a, #site-title-second-line a:hover, #site-title-second-line a:focus {
 		color: $cardinal_clr-text;
