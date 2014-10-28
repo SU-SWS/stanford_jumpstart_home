@@ -86,7 +86,8 @@ function stanford_jumpstart_home_menu() {
 function stanford_jumpstart_home_dashboard() {
   $output = "";
   drupal_add_css(drupal_get_path('module', 'stanford_jumpstart_home') . "/css/stanford_jumpstart_home.admin.css");
-  $output .= drupal_render(drupal_get_form('stanford_jumpstart_homepage_dashboard_form'));
+  $form = drupal_get_form('stanford_jumpstart_homepage_dashboard_form');
+  $output .= drupal_render($form);
   return $output;
 }
 
@@ -212,6 +213,9 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
       'path' => $img_path,
       'alt' => $config['title'],
       'title' => $config['title'],
+      'height' => 330,
+      'width' => 270,
+      'attributes' => array(),
     );
     $form['choosehome']['layouts'][$key]['thumb']["#markup"] = theme_image($variables);
 
@@ -449,10 +453,17 @@ function stanford_homepage_switch_context($form, $form_state) {
 function stanford_jumpstart_home_process_file_managed($element, &$form_state, $form) {
   $element = file_managed_file_process($element, $form_state, $form);
 
-  $uri = $element['#file']->uri;
-
-  if (!empty($uri)) {
-    $variables = array('style_name' => 'medium', 'path' => $uri, 'alt' => 'image', 'title' => 'image', 'attributes' => array('class' => 'image-thumb'));
+  if (!empty($element['#file']->uri)) {
+    $uri = $element['#file']->uri;
+    $variables = array(
+      'style_name' => 'medium',
+      'path' => $uri,
+      'alt' => 'layout',
+      'title' => 'layout',
+      'attributes' => array('class' => 'image-thumb'),
+      'width' => null,
+      'height' => null,
+    );
     $thumb = theme_image_style($variables);
     $element['filename']['#markup'] = "<span class=\"file\">" . $thumb . "</span>";
   }
