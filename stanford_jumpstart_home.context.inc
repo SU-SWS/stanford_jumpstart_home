@@ -8,7 +8,7 @@
  * Implements hook_context_default_contexts().
  */
 function stanford_jumpstart_home_context_default_contexts() {
-  $export = stanford_jumpstart_home_get_contexts(TRUE);
+  $export = stanford_jumpstart_home_get_contexts();
 
   if (empty($export)) {
     return array();
@@ -35,12 +35,13 @@ function stanford_jumpstart_home_get_contexts($clear_cache = FALSE) {
   }
   else {
     $dir = drupal_get_path('module', 'stanford_jumpstart_home') . '/layouts';
-
+    watchdog('stanford_jumpstart_home', 'Path to jumpstart_home: %dir' , array("%dir" => $dir), WATCHDOG_DEBUG);
     $mask = "/.*\.inc$/";
     $options['key'] = 'name';
     $files = file_scan_directory($dir, $mask, $options);
 
     foreach ($files as $name => $data) {
+      watchdog('stanford_jumpstart_home', 'Path to context file: %dir' , array("%dir" => DRUPAL_ROOT . "/" . $data->uri), WATCHDOG_DEBUG);
       include DRUPAL_ROOT . "/" . $data->uri;
       $contexts[$context->name] = $context;
     }
