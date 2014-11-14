@@ -86,7 +86,8 @@ function stanford_jumpstart_home_menu() {
 function stanford_jumpstart_home_dashboard() {
   $output = "";
   drupal_add_css(drupal_get_path('module', 'stanford_jumpstart_home') . "/css/stanford_jumpstart_home.admin.css");
-  $form = drupal_get_form('stanford_jumpstart_homepage_dashboard_form');
+  $form_id = 'stanford_jumpstart_homepage_dashboard_form';
+  $form = drupal_get_form($form_id);
   $output .= drupal_render($form);
   return $output;
 }

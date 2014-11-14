@@ -31,6 +31,7 @@ function stanford_jumpstart_home_get_contexts($clear_cache = FALSE) {
   $contexts = array();
 
   if (!$clear_cache && is_object($cache) && !isset($cache->data[''])) {
+    watchdog('stanford_jumpstart_home', 'Used cache information for context blob', array(), WATCHDOG_DEBUG);
     $contexts = $cache->data;
   }
   else {
