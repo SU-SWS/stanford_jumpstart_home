@@ -105,7 +105,6 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
   $filename = drupal_get_path('module', 'stanford_jumpstart_home') . "/stanford_jumpstart_home.info";
   $info = drupal_parse_info_file($filename);
   $layouts = $info['layout'];
-  // stanford_jumpstart_home_get_contexts(TRUE);
 
   $form['intro']['#markup'] = "<h5>" . t("Use the following options to customize the design and layout of your site. Choose a homepage layout, visual style, and font family") . "</h5>";
 
@@ -174,8 +173,6 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
 
     // Enabled
     $selectedornot = ($context->disabled) ? t("Select") : t("Selected");
-    # $class = ($context->disabled) ? "" : "selected";
-    # $form[$key]['status']['#markup'] = "<div><a class=\"$class button\" name=\"". $context->name . "\" id=\"" . $context->name . "\">" . (($context->disabled) ? t("Select") : t("Selected")) . "</a></div>";
 
     $form['choosehome']['layouts'][$key]['selector'] = array(
       '#type' => "button",
@@ -442,9 +439,9 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
 
   $settings = variable_get('sjh_' . $context_name, null);
   $vars['classes_array'][] = "active-home-context";
-  foreach ($body_classes as $body_class) {
-    $vars['classes_array'][] = drupal_clean_css_identifier($body_class);
-  }
+  // foreach ($body_classes as $body_class) {
+  //   $vars['classes_array'][] = drupal_clean_css_identifier($body_class);
+  // }
   if (!isset($vars['classes'])) {
     $vars['classes'] = "";
   }
@@ -458,10 +455,15 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
   // Header Image File Upload
   // ---------------------------------------------------------------------------
 
-  // Try to load a file from the upload form
-
+  // Try to load a file from the upload form.
   if (isset($settings['header_image'])) {
     $header_file = file_load($settings['header_image']);
+
+    // If the front page enforce the bleed!
+    if (drupal_is_front_page()) {
+      $vars['header_bkg_style_front'] = "header-bkg-style-frontbleed";
+    }
+
   }
 
   // If there is a file adjust the URI for the theme to use.
@@ -474,11 +476,11 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
     $header_file->uri = variable_get("stanford_jumpstart_home_default_header_image", drupal_get_path("module", "stanford_jumpstart_home") . "/img/header-background-default.jpg");
   }
 
-  // If not empty and a setting exists
+  // If not empty and a setting exists.
   if (isset($settings['header_image'])) {
     $vars['header_bkg_style'] = "header-bkg-image";
     $vars['header_bkg'] = 'header-bkg';
-    $vars['header_bkg_path'] = url($header_file->uri, array('absolute'=>TRUE));
+    $vars['header_bkg_path'] = url($header_file->uri, array('absolute' => TRUE));
   }
 
   // Light or dark theme option
