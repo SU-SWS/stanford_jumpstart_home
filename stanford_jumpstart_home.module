@@ -439,9 +439,6 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
 
   $settings = variable_get('sjh_' . $context_name, null);
   $vars['classes_array'][] = "active-home-context";
-  // foreach ($body_classes as $body_class) {
-  //   $vars['classes_array'][] = drupal_clean_css_identifier($body_class);
-  // }
   if (!isset($vars['classes'])) {
     $vars['classes'] = "";
   }

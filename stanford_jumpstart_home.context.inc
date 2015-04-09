@@ -30,19 +30,16 @@ function stanford_jumpstart_home_get_contexts($clear_cache = FALSE) {
   $cache = cache_get('jumpstart_home_context');
   $contexts = array();
 
-  if (!$clear_cache && is_object($cache) && !isset($cache->data[''])) {
-    //watchdog('stanford_jumpstart_home', 'Used cache information for context blob', array(), WATCHDOG_DEBUG);
+  if (!$clear_cache && is_object($cache) && !isset($cache->data['']) && count($cache->data)) {
     $contexts = $cache->data;
   }
   else {
     $dir = drupal_get_path('module', 'stanford_jumpstart_home') . '/layouts';
-    //watchdog('stanford_jumpstart_home', 'Path to jumpstart_home: %dir' , array("%dir" => $dir), WATCHDOG_DEBUG);
     $mask = "/.*\.inc$/";
     $options['key'] = 'name';
     $files = file_scan_directory($dir, $mask, $options);
 
     foreach ($files as $name => $data) {
-      //watchdog('stanford_jumpstart_home', 'Path to context file: %dir' , array("%dir" => DRUPAL_ROOT . "/" . $data->uri), WATCHDOG_DEBUG);
       include DRUPAL_ROOT . "/" . $data->uri;
       $contexts[$context->name] = $context;
     }
