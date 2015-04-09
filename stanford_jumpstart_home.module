@@ -80,23 +80,6 @@ function stanford_jumpstart_home_menu() {
 }
 
 /**
- * Load up the cache!
- */
-function stanford_jumpstart_home_init() {
-//  if (drupal_is_front_page()) {
-//    module_load_include("inc", "stanford_jumpstart_home", "stanford_jumpstart_home.context");
-//    $jumpstart_contexts = stanford_jumpstart_home_context_default_contexts();
-//    $contexts = context_get();
-//    $keys = array_keys($jumpstart_contexts);
-//    if (!count($jumpstart_contexts) || !in_array($keys, $contexts->context)) {
-//      context_invalidate_cache();
-//      stanford_jumpstart_home_get_contexts(TRUE);
-//      module_invoke_all("default_contexts");
-//    }
-//  }
-}
-
-/**
  * The dashboard functionality for the home page.
  * @return [type] [description]
  */
