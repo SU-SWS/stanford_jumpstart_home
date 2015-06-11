@@ -458,12 +458,6 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
   // Try to load a file from the upload form.
   if (isset($settings['header_image'])) {
     $header_file = file_load($settings['header_image']);
-
-    // If the front page enforce the bleed!
-    if (drupal_is_front_page()) {
-      $vars['header_bkg_style_front'] = "header-bkg-style-frontbleed";
-    }
-
   }
 
   // If there is a file adjust the URI for the theme to use.
