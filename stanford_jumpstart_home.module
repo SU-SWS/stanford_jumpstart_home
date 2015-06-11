@@ -430,22 +430,22 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
   global $theme;
 
   $context_name = variable_get('stanford_jumpstart_home_active', '');
-  $body_classes = explode(" ", variable_get('stanford_jumpstart_home_active_body_class', ''));
 
   // No active context set.
   if (empty($context_name)) {
     return;
   }
 
+  // Get and add classes to body field.
   $settings = variable_get('sjh_' . $context_name, null);
-  $vars['classes_array'][] = "active-home-context";
-  if (!isset($vars['classes'])) {
-    $vars['classes'] = "";
+  $body_classes = explode(" ", variable_get('stanford_jumpstart_home_active_body_class', ''));
+  $body_classes[] = "active-home-context";
+
+  foreach ($body_classes as $index => $class) {
+    $body_classes[$index] = drupal_clean_css_identifier($class);
   }
-  
-  foreach ($body_classes as $body_class) {
-    $vars['classes'] .= drupal_clean_css_identifier($body_class);
-  }
+
+  $vars['classes_array'] = array_merge($vars['classes_array'], $body_classes);
 
   // Missing settings.
   if (is_null($settings)) {
