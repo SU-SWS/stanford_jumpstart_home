@@ -18,10 +18,17 @@ dependencies[] = ctools
 # layout[setting][light_dark] = TRUE
 # layout[setting][color] = TRUE
 
+layout[stanford_jumpstart_home_hoover][context] = "stanford_jumpstart_home_hoover"
+layout[stanford_jumpstart_home_hoover][thumb] = "js-home-morris.png"
+layout[stanford_jumpstart_home_hoover][title] = "Hoover"
+layout[stanford_jumpstart_home_hoover][description] = "<ul><li>About block</li><li>Banner block</li><li>One small custom block</li><li>One large custom block</li><
+</ul>"
+layout[stanford_jumpstart_home_hoover][class] = "stanford-jumpstart-home-hoover"
+
 layout[stanford_jumpstart_home_morris][context] = "stanford_jumpstart_home_morris"
 layout[stanford_jumpstart_home_morris][thumb] = "js-home-morris.png"
 layout[stanford_jumpstart_home_morris][title] = "Morris"
-layout[stanford_jumpstart_home_morris][description] = "<ul><li>About block</li><li>Small banner block</li><li>One small custom block</li><li>Auto-generated News block</li><li>Auto-generated Events block</li></ul>"
+layout[stanford_jumpstart_home_morris][description] = "<ul><li>About block</li><li>Banner block</li><li>One small custom block</li><li>Auto-generated News block</li><li>Auto-generated Events block</li></ul>"
 layout[stanford_jumpstart_home_morris][class] = "stanford-jumpstart-home-morris"
 
 
