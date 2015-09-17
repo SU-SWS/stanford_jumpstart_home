@@ -35,13 +35,13 @@ $context->reactions = array(
       'bean-jumpstart-small-custom-block' => array(
         'module' => 'bean',
         'delta' => 'jumpstart-small-custom-block',
-        'region' => 'content_row3',
+        'region' => 'content_lower',
         'weight' => '-10',
       ),
       'bean-jumpstart-large-custom-block' => array(
         'module' => 'bean',
         'delta' => 'jumpstart-large-custom-block',
-        'region' => 'content_row3',
+        'region' => 'content_lower',
         'weight' => '-9',
       ),
     ),
