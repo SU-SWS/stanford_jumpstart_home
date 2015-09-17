@@ -40,7 +40,7 @@ layout[stanford_jumpstart_home_terman][class] = "stanford-jumpstart-home-terman"
 layout[stanford_jumpstart_home_petit][context] = "stanford_jumpstart_home_petit"
 layout[stanford_jumpstart_home_petit][thumb] = "js-home-petit.png"
 layout[stanford_jumpstart_home_petit][title] = "Petit"
-layout[stanford_jumpstart_home_petit][description] = "Coming soon...<ul><li>Full-width banner block</li><li>Large About block</li><li>Auto-generated News block</li><li>Large custom block</li><li>Auto-generated Events block</li></ul>"
+layout[stanford_jumpstart_home_petit][description] = "Coming soon...<ul><li>Full-width banner block</li><li>About block</li><li>Auto-generated News block</li><li>Auto-generated Events block</li><li>Large custom block</li><li>Small custom block</li></ul>"
 layout[stanford_jumpstart_home_petit][class] = "stanford-jumpstart-home-petit"
 
 layout[stanford_jumpstart_home_panama][context] = "stanford_jumpstart_home_panama"
