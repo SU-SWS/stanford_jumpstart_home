@@ -19,18 +19,29 @@ dependencies[] = ctools
 # layout[setting][color] = TRUE
 
 layout[stanford_jumpstart_home_hoover][context] = "stanford_jumpstart_home_hoover"
-layout[stanford_jumpstart_home_hoover][thumb] = "js-home-morris.png"
+layout[stanford_jumpstart_home_hoover][thumb] = "js-home-hoover.png"
 layout[stanford_jumpstart_home_hoover][title] = "Hoover"
-layout[stanford_jumpstart_home_hoover][description] = "<ul><li>About block</li><li>Banner block</li><li>One small custom block</li><li>One large custom block</li><
-</ul>"
+layout[stanford_jumpstart_home_hoover][description] = "<ul><li>About block</li><li>Banner block</li><li>Small custom block</li><li>Large custom block</li></ul>"
 layout[stanford_jumpstart_home_hoover][class] = "stanford-jumpstart-home-hoover"
 
 layout[stanford_jumpstart_home_morris][context] = "stanford_jumpstart_home_morris"
 layout[stanford_jumpstart_home_morris][thumb] = "js-home-morris.png"
 layout[stanford_jumpstart_home_morris][title] = "Morris"
-layout[stanford_jumpstart_home_morris][description] = "<ul><li>About block</li><li>Banner block</li><li>One small custom block</li><li>Auto-generated News block</li><li>Auto-generated Events block</li></ul>"
+layout[stanford_jumpstart_home_morris][description] = "<ul><li>About block</li><li>Banner block</li><li>Small custom block</li><li>Auto-generated News block</li><li>Auto-generated Events block</li></ul>"
 layout[stanford_jumpstart_home_morris][class] = "stanford-jumpstart-home-morris"
 
+#Todo: build these layouts
+#layout[stanford_jumpstart_home_petit][context] = "stanford_jumpstart_home_petit"
+#layout[stanford_jumpstart_home_petit][thumb] = "js-home-petit.png"
+#layout[stanford_jumpstart_home_petit][title] = "Petit"
+#layout[stanford_jumpstart_home_petit][description] = "<ul>li>Full-width banner block</li><li>Large About block</li><li>Auto-generated News block</li><li>Large custom block</li><li>Auto-generated Events block</li></ul>"
+#layout[stanford_jumpstart_home_petit][class] = "stanford-jumpstart-home-petit"
+
+#layout[stanford_jumpstart_home_terman][context] = "stanford_jumpstart_home_terman"
+#layout[stanford_jumpstart_home_terman][thumb] = "js-home-terman.png"
+#layout[stanford_jumpstart_home_terman][title] = "Terman"
+#layout[stanford_jumpstart_home_terman][description] = "<ul>li>Full-width banner block</li><li>Large About block</li><li>Auto-generated News block</li><li>Large custom block</li><li>Auto-generated Events block</li></ul>"
+#layout[stanford_jumpstart_home_terman][class] = "stanford-jumpstart-home-terman"
 
 layout[stanford_jumpstart_home_panama][context] = "stanford_jumpstart_home_panama"
 layout[stanford_jumpstart_home_panama][thumb] = "js-home-panama.png"
