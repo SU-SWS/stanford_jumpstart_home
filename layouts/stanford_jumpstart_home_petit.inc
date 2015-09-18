@@ -1,15 +1,15 @@
 <?php
 /**
  * @file
- * Code for the Stanford Jumpstart Petit Homepage layout.
+ * Code for the Stanford Jumpstart Pettit Homepage layout.
  *  @author Caryl Westerberg <cjwest@stanford.edu>
  */
 
 $context = new stdClass();
 $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
 $context->api_version = 3;
-$context->name = 'stanford_jumpstart_home_petit';
-$context->description = 'Homepage: Petit layout with full-width banner, news, events, and a large custom block';
+$context->name = 'stanford_jumpstart_home_pettit';
+$context->description = 'Homepage: Pettit layout with full-width banner, news, events, and a large custom block';
 $context->tag = 'Home Page';
 $context->conditions = array(
   'path' => array(
@@ -59,4 +59,4 @@ $context->condition_mode = 0;
 // Translatables
 // Included for use with string extractors like potx.
 t('Home Page');
-t('Homepage: Petit layout with full-width banner, news, events, and a large custom block');
+t('Homepage: Pettit layout with full-width banner, news, events, and a large custom block');
