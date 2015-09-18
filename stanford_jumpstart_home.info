@@ -30,7 +30,6 @@ layout[stanford_jumpstart_home_morris][title] = "Morris"
 layout[stanford_jumpstart_home_morris][description] = "<ul><li>About block</li><li>Banner block</li><li>Small custom block</li><li>Auto-generated News block</li><li>Auto-generated Events block</li></ul>"
 layout[stanford_jumpstart_home_morris][class] = "stanford-jumpstart-home-morris"
 
-#Todo: finish these layouts
 layout[stanford_jumpstart_home_terman][context] = "stanford_jumpstart_home_terman"
 layout[stanford_jumpstart_home_terman][thumb] = "js-home-terman.png"
 layout[stanford_jumpstart_home_terman][title] = "Terman"
