@@ -26,9 +26,9 @@ $context->reactions = array(
         'region' => 'main_top',
         'weight' => '-10',
       ),
-      'bean-jumpstart-home-page-full-width-b' => array(
+      'bean-jumpstart-home-page-banner---no-' => array(
         'module' => 'bean',
-        'delta' => 'jumpstart-home-page-full-width-b',
+        'delta' => 'jumpstart-home-page-banner---no-',
         'region' => 'main_top',
         'weight' => '-9',
       ),
