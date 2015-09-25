@@ -4,7 +4,6 @@
  * Code for the Stanford Jumpstart Morris Homepage layout.
  *  @author Caryl Westerberg <cjwest@stanford.edu>
  */
-
 $context = new stdClass();
 $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
 $context->api_version = 3;
@@ -27,9 +26,9 @@ $context->reactions = array(
         'region' => 'main_top',
         'weight' => '-10',
       ),
-      'bean-homepage-banner-image' => array(
+      'bean-jumpstart-home-page-banner---no-' => array(
         'module' => 'bean',
-        'delta' => 'homepage-banner-image',
+        'delta' => 'jumpstart-home-page-banner---no-',
         'region' => 'main_top',
         'weight' => '-9',
       ),
