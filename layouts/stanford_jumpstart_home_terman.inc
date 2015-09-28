@@ -4,7 +4,6 @@
  * Code for the Stanford Jumpstart Terman Homepage layout.
  *  @author Caryl Westerberg <cjwest@stanford.edu>
  */
-
 $context = new stdClass();
 $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
 $context->api_version = 3;
@@ -21,11 +20,11 @@ $context->conditions = array(
 $context->reactions = array(
   'block' => array(
     'blocks' => array(
-      'bean-homepage-banner-image' => array(
+      'bean-jumpstart-home-page-full-width-b' => array(
         'module' => 'bean',
-        'delta' => 'homepage-banner-image',
+        'delta' => 'jumpstart-home-page-full-width-b',
         'region' => 'main_top',
-        'weight' => '-9',
+        'weight' => '-8',
       ),
       'bean-homepage-about-block' => array(
         'module' => 'bean',
@@ -66,4 +65,3 @@ $context->condition_mode = 0;
 // Included for use with string extractors like potx.
 t('Home Page');
 t('Homepage: Terman layout with full-width banner, news, events, large and small custom block\'');
-
