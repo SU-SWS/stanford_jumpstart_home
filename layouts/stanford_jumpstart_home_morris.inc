@@ -1,13 +1,14 @@
 <?php
 /**
  * @file
+ * Code for the Stanford Jumpstart Morris Homepage layout.
+ *  @author Caryl Westerberg <cjwest@stanford.edu>
  */
-
 $context = new stdClass();
-$context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
+$context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
 $context->api_version = 3;
-$context->name = 'stanford_jumpstart_home_mayfield_news_events';
-$context->description = 'Homepage: Big Text and Testimonial BEANs on top (Superhero Batman)  with News and Events for dynamic content websites';
+$context->name = 'stanford_jumpstart_home_morris';
+$context->description = 'Homepage: Morris layout with news and events';
 $context->tag = 'Home Page';
 $context->conditions = array(
   'path' => array(
@@ -19,21 +20,21 @@ $context->conditions = array(
 $context->reactions = array(
   'block' => array(
     'blocks' => array(
-      'bean-jumpstart-lead-text-with-body' => array(
-        'module' => 'bean',
-        'delta' => 'jumpstart-lead-text-with-body',
-        'region' => 'main_top',
-        'weight' => '-10',
-      ),
-      'bean-jumpstart-homepage-testimonial-b' => array(
-        'module' => 'bean',
-        'delta' => 'jumpstart-homepage-testimonial-b',
-        'region' => 'main_top',
-        'weight' => '-9',
-      ),
       'bean-homepage-about-block' => array(
         'module' => 'bean',
         'delta' => 'homepage-about-block',
+        'region' => 'main_top',
+        'weight' => '-10',
+      ),
+      'bean-jumpstart-home-page-banner---no-' => array(
+        'module' => 'bean',
+        'delta' => 'jumpstart-home-page-banner---no-',
+        'region' => 'main_top',
+        'weight' => '-9',
+      ),
+      'bean-jumpstart-small-custom-block' => array(
+        'module' => 'bean',
+        'delta' => 'jumpstart-small-custom-block',
         'region' => 'content_row3',
         'weight' => '-10',
       ),
@@ -57,4 +58,4 @@ $context->condition_mode = 0;
 // Translatables
 // Included for use with string extractors like potx.
 t('Home Page');
-t('Homepage: Big Text and Testimonial BEANs on top (Superhero Batman)  with News and Events for dynamic content websites');
+t('Homepage: Morris layout with news and events');

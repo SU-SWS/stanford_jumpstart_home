@@ -10,7 +10,7 @@
  */
 function stanford_jumpstart_home_install() {
 
-  variable_set('stanford_jumpstart_home_active', 'stanford_jumpstart_home_palm');
+  variable_set('stanford_jumpstart_home_active', 'stanford_jumpstart_home_hoover');
   variable_set("stanford_jumpstart_home_default_header_image", drupal_get_path("module", "stanford_jumpstart_home") . "/img/header-background-default.jpg");
 
   // Insert menu item into shortcuts bar...
