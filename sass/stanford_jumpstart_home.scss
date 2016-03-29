@@ -453,6 +453,27 @@
     }
 }
 
+.stanford-jumpstart-home-palm.style-custom-styles-vivid {
+    .navbar {
+        background: $vivid_clr-well-bkg;
+    }
+    #block-bean-jumpstart-homepage-tall-banner .border-simple img {
+        background-color: $vivid_clr-well-bkg;
+    }
+    .site-main-menu {
+        .navbar .nav > .active > a,
+        .navbar .nav > .active > a:hover,
+        .navbar .nav > .active > a:focus,
+        .navbar .nav > li > a:focus,
+        .navbar .nav > li > a:hover,
+        .navbar .nav > .active-trail > a {
+            color: $vivid_clr-page-bkg;
+            background: $vivid_clr-page-bkg;
+            border-bottom: 2px solid #1288b5;
+        }
+    }
+}
+
 
 /** LAYOUT: SERRA ************************
     - Color background on header
