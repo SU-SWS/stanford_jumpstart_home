@@ -1,9 +1,9 @@
 /*
 Syntax error: Invalid CSS after "...-home-panama {}": expected "}", was ""
-        on line 655 of /Applications/MAMP/htdocs/git-repos/stanford_jumpstart_home/sass/stanford_jumpstart_home.scss
+        on line 654 of /Applications/MAMP/htdocs/git-repos/stanford_jumpstart_home/sass/stanford_jumpstart_home.scss
 
 Backtrace:
-/Applications/MAMP/htdocs/git-repos/stanford_jumpstart_home/sass/stanford_jumpstart_home.scss:655
+/Applications/MAMP/htdocs/git-repos/stanford_jumpstart_home/sass/stanford_jumpstart_home.scss:654
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1129:in `expected'
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/scss/parser.rb:1061:in `tok!'
@@ -64,4 +64,4 @@ org/jruby/RubyKernel.java:1419:in `loop'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...-home-panama {}\": expected \"}\", was \"\"\A         on line 655 of /Applications/MAMP/htdocs/git-repos/stanford_jumpstart_home/sass/stanford_jumpstart_home.scss"; }
+  content: "Syntax error: Invalid CSS after \"...-home-panama {}\": expected \"}\", was \"\"\A         on line 654 of /Applications/MAMP/htdocs/git-repos/stanford_jumpstart_home/sass/stanford_jumpstart_home.scss"; }
