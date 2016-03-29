@@ -134,6 +134,16 @@
     }
 }
 
+.stanford-jumpstart-home-lomita.style-custom-styles-vivid {
+    .header-bkg.header-bkg-style-frontbleed .site-main-menu .navbar .nav > li > a {
+        padding: 0.25em 0;
+        margin: 0 0.5em;
+    }
+    .header-bkg.header-bkg-style-frontbleed .site-main-menu .navbar .nav > li > a:hover,
+    .header-bkg.header-bkg-style-frontbleed .site-main-menu .navbar .nav > li > a:focus {
+        border-bottom: none;
+    }
+}
 
 /** LAYOUT: MAYFIELD ************************
     - Header background image
@@ -184,16 +194,7 @@
 
 .stanford-jumpstart-home-mayfield.style-custom-styles-rich {}
 
-.stanford-jumpstart-home-mayfield.style-custom-styles-vivid {
-    .header-bkg.header-bkg-style-frontbleed .site-main-menu .navbar .nav > li > a {
-        padding: 0.25em 0;
-        margin: 0 0.5em;
-    }
-    .header-bkg.header-bkg-style-frontbleed .site-main-menu .navbar .nav > li > a:hover,
-    .header-bkg.header-bkg-style-frontbleed .site-main-menu .navbar .nav > li > a:focus {
-        border-bottom: none;
-    }
-}
+.stanford-jumpstart-home-mayfield.style-custom-styles-vivid {{
 
 
 /** LAYOUT: PALM ************************
