@@ -134,6 +134,30 @@
     }
 }
 
+.stanford-jumpstart-home-lomita.style-custom-styles-vivid {
+    .not-front .site-main-menu {
+        background: $vivid_clr-menu-text;
+    }
+    .navbar .nav > .active > a,
+    .navbar .nav > .active > a:hover,
+    .navbar .nav > .active > a:focus,
+    .navbar .nav > li > a:focus,
+    .navbar .nav > li > a:hover,
+    .navbar .nav > .active-trail > a {
+        color: $vivid_clr-menu-link-border;
+        border-bottom: 2px solid $vivid_clr-menu-link-border;
+        padding: 0.25em 0;
+        margin: 0 0.5em;
+    }
+    .navbar .nav > li > a {
+        padding: 0.25em 0;
+        margin: 0 0.5em;
+    }
+    .site-footer {
+        background: $rich_clr-footer-bkg;
+    }
+}
+
 
 /** LAYOUT: MAYFIELD ************************
     - Header background image
