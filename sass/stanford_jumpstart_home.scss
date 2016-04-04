@@ -135,7 +135,7 @@
 }
 
 .stanford-jumpstart-home-lomita.style-custom-styles-vivid {
-    .not-front .site-main-menu {
+    .site-main-menu {
         background: $vivid_clr-menu-text;
     }
     .navbar .nav > .active > a,
@@ -152,9 +152,6 @@
     .navbar .nav > li > a {
         padding: 0.25em 0;
         margin: 0 0.5em;
-    }
-    .site-footer {
-        background: $rich_clr-footer-bkg;
     }
 }
 
