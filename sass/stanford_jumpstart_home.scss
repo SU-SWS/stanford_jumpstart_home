@@ -151,6 +151,7 @@
         .navbar .nav > li > a:hover,
         .navbar .nav > .active-trail > a {
             border-bottom: 2px solid $vivid_clr-page-bkg;
+            background: $vivid_clr-menu-bkg;
         }
     }
 }
