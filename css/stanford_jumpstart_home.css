@@ -134,22 +134,22 @@
 }
 
 /* line 138, ../sass/stanford_jumpstart_home.scss */
-.stanford-jumpstart-home-lomita.style-custom-styles-vivid .navbar {
+.header-bkg.header-bkg-style-frontbleed.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu {
   background: #0f6c91;
 }
 /* line 142, ../sass/stanford_jumpstart_home.scss */
-.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > li > a {
+.header-bkg.header-bkg-style-frontbleed.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > li > a {
   color: white;
   padding: 0.25em 0;
   margin: 0 0.5em;
 }
 /* line 152, ../sass/stanford_jumpstart_home.scss */
-.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > .active > a,
-.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > .active > a:hover,
-.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > .active > a:focus,
-.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > li > a:focus,
-.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > li > a:hover,
-.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > .active-trail > a {
+.header-bkg.header-bkg-style-frontbleed.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > .active > a,
+.header-bkg.header-bkg-style-frontbleed.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > .active > a:hover,
+.header-bkg.header-bkg-style-frontbleed.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > .active > a:focus,
+.header-bkg.header-bkg-style-frontbleed.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > li > a:focus,
+.header-bkg.header-bkg-style-frontbleed.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > li > a:hover,
+.header-bkg.header-bkg-style-frontbleed.stanford-jumpstart-home-lomita.style-custom-styles-vivid .site-main-menu .navbar .nav > .active-trail > a {
   border-bottom: 2px solid white;
 }
 
