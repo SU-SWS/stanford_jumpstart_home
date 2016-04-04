@@ -138,18 +138,19 @@
     .site-main-menu {
         background: $vivid_clr-menu-text;
     }
-    .navbar .nav > .active > a,
-    .navbar .nav > .active > a:hover,
-    .navbar .nav > .active > a:focus,
-    .navbar .nav > li > a:focus,
-    .navbar .nav > li > a:hover,
-    .navbar .nav > .active-trail > a {
+    .header-bkg.header-bkg-style-frontbleed .site-main-menu .navbar .nav > .active > a,
+    .header-bkg.header-bkg-style-frontbleed .site-main-menu .navbar .nav > .active > a:hover,
+    .header-bkg.header-bkg-style-frontbleed .site-main-menu .navbar .nav > .active > a:focus,
+    .header-bkg.header-bkg-style-frontbleed .site-main-menu .navbar .nav > li > a:hover,
+    .header-bkg.header-bkg-style-frontbleed .site-main-menu .navbar .nav > li > a:focus
+    .header-bkg.header-bkg-style-frontbleed .site-main-menu .navbar .nav > .active-trail > a {
         color: $vivid_clr-menu-link-border;
         border-bottom: 2px solid $vivid_clr-menu-link-border;
         padding: 0.25em 0;
         margin: 0 0.5em;
     }
     .navbar .nav > li > a {
+        color: $vivid_clr-menu-link-border;
         padding: 0.25em 0;
         margin: 0 0.5em;
     }
