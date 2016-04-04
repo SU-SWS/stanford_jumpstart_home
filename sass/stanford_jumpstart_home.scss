@@ -148,6 +148,7 @@
     .navbar .nav > li > a:focus
     .navbar .nav > .active-trail > a {
         color: $vivid_clr-menu-link-border;
+        background: $vivid_clr-menu-bkg;
         border-bottom: 2px solid $vivid_clr-menu-link-border;
         padding: 0.25em 0;
         margin: 0 0.5em;
