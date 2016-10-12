@@ -1,6 +1,7 @@
 <?php
 /**
  * @file
+ * Context export for Home Page, which includes Research Projects, Recent Publications, and Recent News blocks. Built for Jumpstart Lab.
  */
 
 $context = new stdClass();
@@ -52,4 +53,3 @@ $context->condition_mode = 0;
 // Included for use with string extractors like potx.
 t('Home Page');
 t('Tagline with Research Projects, Recent Publications, and Recent News blocks');
-
