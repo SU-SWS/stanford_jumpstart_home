@@ -20,6 +20,12 @@ $context->conditions = array(
 $context->reactions = array(
   'block' => array(
     'blocks' => array(
+      'search-form' => array(
+        'module' => 'search',
+        'delta' => 'form',
+        'region' => 'search_box',
+        'weight' => '-10',
+      ),
       'bean-jumpstart-lead-text-with-body' => array(
         'module' => 'bean',
         'delta' => 'jumpstart-lead-text-with-body',
@@ -43,6 +49,12 @@ $context->reactions = array(
         'delta' => 'f73ff55b085ea49217d347de6630cd5a',
         'region' => 'content_col3-3',
         'weight' => '-10',
+      ),
+      'bean-footer-logo-block' => array(
+        'module' => 'bean',
+        'delta' => 'footer-logo-block',
+        'region' => 'footer',
+        'weight' => '10',
       ),
     ),
   ),
