@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Homepage layout for Jumpstart Lab.
