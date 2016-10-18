@@ -58,6 +58,14 @@ layout[stanford_jumpstart_home_mayfield_news_events][header_image] = TRUE
 layout[stanford_jumpstart_home_mayfield_news_events][light_dark] = TRUE
 layout[stanford_jumpstart_home_mayfield_news_events][class] = "stanford-jumpstart-home-mayfield"
 
+layout[stanford_jumpstart_home_mayfield_lab][context] = "stanford_jumpstart_home_mayfield_lab"
+layout[stanford_jumpstart_home_mayfield_lab][thumb] = "js-home-mayfield.png"
+layout[stanford_jumpstart_home_mayfield_lab][title] = "Mayfield Lab"
+layout[stanford_jumpstart_home_mayfield_lab][description] = "<ul><li>Lead Text Block</li><li>Research Projects block</li><li>Auto-generated Publications block</li><li>Auto-generated News block</li></ul>"
+layout[stanford_jumpstart_home_mayfield_lab][header_image] = TRUE
+layout[stanford_jumpstart_home_mayfield_lab][light_dark] = TRUE
+layout[stanford_jumpstart_home_mayfield_lab][class] = "stanford-jumpstart-home-mayfield"
+
 layout[stanford_jumpstart_home_serra][context] = "stanford_jumpstart_home_serra"
 layout[stanford_jumpstart_home_serra][thumb] = "js-home-serra.png"
 layout[stanford_jumpstart_home_serra][title] = "Serra"
