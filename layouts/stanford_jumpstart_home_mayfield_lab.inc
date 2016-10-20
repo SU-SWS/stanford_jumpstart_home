@@ -33,29 +33,29 @@ $context->reactions = array(
         'region' => 'content_top',
         'weight' => '-10',
       ),
-      'bean-homepage-research-projects-block' => array(
+      'bean-jumpstart-lab-homepage-research-' => array(
         'module' => 'bean',
-        'delta' => 'homepage-research-projects-block',
-        'region' => 'content_col3-1',
+        'delta' => 'jumpstart-lab-homepage-research-',
+        'region' => 'content_row3',
         'weight' => '-10',
       ),
-      'views-publications_common-block_4' => array(
+      'views-c02cf3675aaf368953397f4126400552' => array(
         'module' => 'views',
-        'delta' => 'publications_common-block_4',
-        'region' => 'content_col3-2',
-        'weight' => '-10',
+        'delta' => 'c02cf3675aaf368953397f4126400552',
+        'region' => 'content_row3',
+        'weight' => '-9',
       ),
-      'views-f73ff55b085ea49217d347de6630cd5a' => array(
+      'views-stanford_news-block_1' => array(
         'module' => 'views',
-        'delta' => 'f73ff55b085ea49217d347de6630cd5a',
-        'region' => 'content_col3-3',
-        'weight' => '-10',
+        'delta' => 'stanford_news-block_1',
+        'region' => 'content_row3',
+        'weight' => '-8',
       ),
-      'bean-footer-logo-block' => array(
+      'bean-jumpstart-lab-footer-logo-block' => array(
         'module' => 'bean',
-        'delta' => 'footer-logo-block',
+        'delta' => 'jumpstart-lab-footer-logo-block',
         'region' => 'footer',
-        'weight' => '10',
+        'weight' => '-10',
       ),
     ),
   ),
