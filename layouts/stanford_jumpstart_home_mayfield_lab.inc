@@ -39,15 +39,15 @@ $context->reactions = array(
         'region' => 'content_row3',
         'weight' => '-10',
       ),
-      'views-c02cf3675aaf368953397f4126400552' => array(
+      'views-publications_common-block_4' => array(
         'module' => 'views',
-        'delta' => 'c02cf3675aaf368953397f4126400552',
+        'delta' => 'publications_common-block_4',
         'region' => 'content_row3',
         'weight' => '-9',
       ),
-      'views-stanford_news-block_1' => array(
+      'views-f73ff55b085ea49217d347de6630cd5a' => array(
         'module' => 'views',
-        'delta' => 'stanford_news-block_1',
+        'delta' => 'f73ff55b085ea49217d347de6630cd5a',
         'region' => 'content_row3',
         'weight' => '-8',
       ),
