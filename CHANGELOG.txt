@@ -1,6 +1,14 @@
 Stanford Jumpstart Home
 -------------------------------------------------------------------
 
+7.x-1.5                                                   2017-01-24
+--------------------------------------------------------------------
+
+- Home Page Layout with Research Projects, Publications, and News (JSL)
+- Adding Footer Logo Block and Search Form (JSL)
+- Adding mayfield-lab to .info file so it will appear as a design page
+- Fixes Publications and News Block Types on Homepage (JSL)
+
 7.x-1.4                                                   2016-05-30
 --------------------------------------------------------------------
   - Many CSS bug fixes
@@ -24,4 +32,3 @@ Stanford Jumpstart Home
 7.x-1.0                                                   2014-11-05
 --------------------------------------------------------------------
   - Initial release
-
