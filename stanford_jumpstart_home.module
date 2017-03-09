@@ -307,6 +307,14 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
   $form['design_container']['#tree'] = TRUE;
   $form['design_container']['#collapsible'] = FALSE;
 
+
+  $form['include_flat_styles'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Include Flat Styles'),
+    '#weight' => 9998,
+    '#default_value' => variable_get('stanford_jumpstart_home_include_flat_styles', 1),
+  );
+
   $form['submit'] = array(
     '#type' => 'submit',
     '#value' => t('Save settings'),
@@ -358,6 +366,7 @@ function stanford_jumpstart_homepage_dashboard_form_submit($form, $form_state) {
   }
   // force custom option.
   $theme_settings['choosestyle_styleoptions'] = 'style-custom';
+  variable_set('stanford_jumpstart_home_include_flat_styles', $values['include_flat_styles']);
 
   variable_set('theme_stanford_framework_settings', $theme_settings);
 
@@ -428,6 +437,10 @@ function stanford_jumpstart_home_process_file_managed($element, &$form_state, $f
  */
 function stanford_jumpstart_home_preprocess_html(&$vars) {
   global $theme;
+
+  if (variable_get('stanford_jumpstart_home_include_flat_styles', 0)) {
+    drupal_add_css(drupal_get_path('module', 'stanford_jumpstart_home') . '/css/stanford_jumpstart_home_typography.css');
+  }
 
   $context_name = variable_get('stanford_jumpstart_home_active', '');
 
