@@ -1,8 +1,10 @@
 <?php
+
 /**
  * @file
- * @author Shea McKinney <sheamck@stanford.edu>
  * Installation tasks.
+ *
+ * @author Shea McKinney <sheamck@stanford.edu>
  */
 
 /**
@@ -15,7 +17,6 @@ function stanford_jumpstart_home_install() {
 
   // Insert menu item into shortcuts bar...
   // Check for existance of the menu.
-
   $menu = menu_load('menu-admin-shortcuts-ready-to-la');
   if (!$menu) {
     return;
@@ -31,23 +32,4 @@ function stanford_jumpstart_home_install() {
   menu_link_save($menu_link);
 
 
-
-}
-
-/**
- * Implements hook_enable().
- */
-function stanford_jumpstart_home_enable() {
-}
-
-/**
- * Implements hook_disable().
- */
-function stanford_jumpstart_home_disable() {
-}
-
-/**
- * Implements hook_uninstall().
- */
-function stanford_jumpstart_home_uninstall() {
 }

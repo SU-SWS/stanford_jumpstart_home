@@ -1,5 +1,4 @@
-/** SEARCH **/
-
+// SEARCH
 #block-search-form h2,
 #block-search-form input.btn-search {
   display: none;
@@ -10,7 +9,7 @@ input[type="text"] {
 }
 
 body #block-search-form input.search-query {
-  background: url("../images/sws-magnifying-glass.svg") no-repeat 0px center;
+  background: url("../images/sws-magnifying-glass.svg") no-repeat 0 center;
   background-size: 45px 45px;
   -webkit-transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
   transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
@@ -20,12 +19,12 @@ body #block-search-form input.search-query {
   border-radius: 25px;
   border: none;
   cursor: pointer;
-  box-shadow: 0px 0px 0px 1.5px #c3c1be;
+  box-shadow: 0 0 0 1.5px #c3c1be;
 }
 
 body #block-search-form input.search-query:hover,
 body #block-search-form input.search-query:focus {
-  box-shadow: 0px 0px 0px 2px #c3c1be;
+  box-shadow: 0 0 0 2px #c3c1be;
   border: none;
 }
 
@@ -40,7 +39,7 @@ body #block-search-form input.search-query:focus {
   width: 145px;
 }
 
-/** BANNERS **/
+// BANNERS 
 
 .border-simple .banner-overlay > div {
   margin-left: 1.5em;
@@ -56,7 +55,7 @@ body #block-search-form input.search-query:focus {
   }
 }
 
-/** IMAGE TREATMENTS **/
+// IMAGE TREATMENTS 
 
 .main .border-shadow img {
   padding: 0;
@@ -81,7 +80,7 @@ body #block-search-form input.search-query:focus {
   }
 }
 
-/** WELL BLOCKS **/
+// WELL BLOCKS 
 
 .well .postcard-left-wrap > div:first-child img,
 .well .postcard-left > div:first-child img {
@@ -100,7 +99,7 @@ body #block-search-form input.search-query:focus {
   background: transparent;
 }
 
-/** VIEWS AND POSTCARDS **/
+// VIEWS AND POSTCARDS 
 
 .well .view .postcard-left-wrap > div:first-child img,
 .well .view .postcard-left > div:first-child img {
@@ -114,10 +113,9 @@ body #block-search-form input.search-query:focus {
   margin-top: .3em;
 }
 
-/** DESIGN COLOR OPTION SPECIFICS **/
+// DESIGN COLOR OPTION SPECIFICS 
 
-/* LIGHT */
-
+// LIGHT
 .style-custom-styles-light .banner-overlay > div {
   background: #fbfbf9;
 }
@@ -206,7 +204,7 @@ body #block-search-form input.search-query:focus {
   }
 }
 
-/* DARK */
+// DARK 
 
 .style-custom-styles-dark #block-search-form input.search-query,
 .style-custom-styles-dark #block-search-form input.search-query:focus {
@@ -265,7 +263,7 @@ body #block-search-form input.search-query:focus {
   }
 }
 
-/* PLAIN */
+// PLAIN 
 
 .style-custom-styles-plain .site-footer {
   border-top: 1px solid #e9e9e9;
@@ -336,7 +334,7 @@ body #block-search-form input.search-query:focus {
   }
 }
 
-/* RICH */
+// RICH 
 
 .stanford-jumpstart-home-panama.style-custom-styles-rich #block-search-form input.search-query,
 .stanford-jumpstart-home-panama.style-custom-styles-rich #block-search-form input.search-query:focus,
@@ -409,7 +407,7 @@ body #block-search-form input.search-query:focus {
   }
 }
 
-/* BRIGHT */
+// BRIGHT 
 
 .style-custom-styles-bright .well.well-transparent,
 .style-custom-styles-bright .well.well-transparent h2 {
@@ -442,7 +440,7 @@ body #block-search-form input.search-query:focus {
   }
 }
 
-/* HIGH CONTRAST */
+// HIGH CONTRAST 
 
 .style-custom-styles-contrast .descriptor {
   color: #333333;
@@ -504,7 +502,7 @@ body #block-search-form input.search-query:focus {
   }
 }
 
-/* CARDINAL */
+// CARDINAL 
 
 .stanford-jumpstart-home-panama.style-custom-styles-cardinal #block-search-form input.search-query,
 .stanford-jumpstart-home-panama.style-custom-styles-cardinal #block-search-form input.search-query:focus,
@@ -543,7 +541,7 @@ body #block-search-form input.search-query:focus {
   }
 }
 
-/* VIVID */
+// VIVID 
 
 .style-custom-styles-vivid .site-footer {
   border-top: 1px solid #e9e9e9;
@@ -578,7 +576,7 @@ body #block-search-form input.search-query:focus {
   }
 }
 
-/* VIVID DESIGN THEME FIXES */
+// VIVID DESIGN THEME FIXES 
 
 .style-custom-styles-vivid .nav-collapse .dropdown-menu > li > a:hover,
 .style-custom-styles-vivid .nav-collapse .dropdown-menu > li > a:focus,
@@ -654,9 +652,9 @@ body #block-search-form input.search-query:focus {
   }
 }
 
-/** DESIGN LAYOUT OPTION SPECIFICS **/
+// DESIGN LAYOUT OPTION SPECIFICS 
 
-/* PALM */
+// PALM 
 
 @media (max-width: 767px) {
   .stanford-jumpstart-home-palm .navbar .nav > li > a {
@@ -668,7 +666,7 @@ body #block-search-form input.search-query:focus {
   }
 }
 
-/* MAYFIELD */
+// MAYFIELD 
 
 .stanford-jumpstart-home-mayfield #block-search-form input.search-query,
 .stanford-jumpstart-home-mayfield #block-search-form input.search-query:focus {
@@ -682,14 +680,14 @@ body #block-search-form input.search-query:focus {
   }
 }
 
-/* LOMITA */
+// LOMITA 
 
 .stanford-jumpstart-home-lomita #block-search-form input.search-query,
 .stanford-jumpstart-home-lomita #block-search-form input.search-query:focus {
   background-color: #f8f7f2;
 }
 
-/** SOE SPECIFIC **/
+// SOE SPECIFIC 
 
 .style-custom-styles-rich #block-search-form input.search-query,
 .style-custom-styles-rich #block-search-form input.search-query:focus,

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * stanford_jumpstart_home.context.inc
@@ -26,7 +27,6 @@ function stanford_jumpstart_home_get_contexts($clear_cache = FALSE) {
   // cache_set($cid, $data, $bin = 'cache', $expire = CACHE_PERMANENT);
   // cache_get($cid, $bin = 'cache');
   // cache_clear_all($cid = NULL, $bin = NULL, $wildcard = FALSE)
-
   $cache = cache_get('jumpstart_home_context');
   $contexts = array();
 
