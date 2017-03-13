@@ -1,6 +1,8 @@
 <?php
+
 /**
  * @file
+ * Serra Layout.
  */
 
 $context = new stdClass();

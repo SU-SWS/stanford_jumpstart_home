@@ -1,5 +1,3 @@
-/** SASS ****************************/
-/** GENERAL ****************************/
 .bean-stanford-testimonial-block .quote {
   margin-top: -34px;
 }
@@ -14,13 +12,8 @@
   top: 20px;
 }
 
-/** LAYOUT: LOMITA ************************
-    - Full-bleed background image
-    - Big text block
-    - Video block
-******************************************/
 .stanford-jumpstart-home-lomita .content-top .block {
-  border: none;
+  border: 0;
   padding: 1em;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -125,12 +118,6 @@
   background: transparent;
 }
 
-/** LAYOUT: MAYFIELD ************************
-    - Header background image
-    - Big text block
-    - Quote block
-    - Three blocks
-******************************************/
 .stanford-jumpstart-home-mayfield #block-bean-jumpstart-lead-text-with-body {
   padding-right: 2em;
 }
@@ -157,11 +144,6 @@
   }
 }
 
-/** LAYOUT: PALM ************************
-    - 12-column banner with overlay
-    - Three blocks
-    - Menu not full width
-******************************************/
 .stanford-jumpstart-home-palm .site-main-menu {
   background: transparent;
   border: 0;
@@ -218,7 +200,7 @@
   background-position: left bottom;
 }
 .stanford-jumpstart-home-palm.style-custom-styles-bright #header #logo.site-logo {
-  border: none;
+  border: 0;
 }
 .stanford-jumpstart-home-palm.style-custom-styles-bright #header.line4 #logo {
   background-position: left bottom 30px;
@@ -267,7 +249,7 @@
   background-position: left bottom;
 }
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal #header #logo.site-logo {
-  border: none;
+  border: 0;
 }
 .stanford-jumpstart-home-palm.style-custom-styles-cardinal #header.line4 #logo {
   background-position: left bottom 30px;
@@ -316,7 +298,7 @@
   background-position: left bottom;
 }
 .stanford-jumpstart-home-palm.style-custom-styles-contrast #header #logo.site-logo {
-  border: none;
+  border: 0;
 }
 .stanford-jumpstart-home-palm.style-custom-styles-contrast #header.line4 #logo {
   background-position: left bottom 30px;
@@ -418,13 +400,6 @@
   border-bottom: 2px solid #ffffff;
 }
 
-/** LAYOUT: SERRA ************************
-    - Color background on header
-    - Big text block
-    - Infotext block
-    - Two-column mission text blocks
-    - Three blocks
-******************************************/
 .stanford-jumpstart-home-serra .site-main-menu,
 .stanford-jumpstart-home-serra .navbar {
   background: transparent;
@@ -556,9 +531,3 @@
 .stanford-jumpstart-home-serra.style-custom-styles-rich .header {
   background: #d5d0c0;
 }
-
-/** LAYOUT: PANAMA ************************
-    - About block
-    - Banner image with overlay
-    - Three blocks
-******************************************/

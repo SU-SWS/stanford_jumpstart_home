@@ -5,7 +5,6 @@
  * Provides the ability to offer several layouts on the home page via context.
  *
  * Provides a dashboard administrative page to toggle through those layouts.
- * @author Shea McKinney <sheamck@stanford.edu>
  */
 
 /**
@@ -23,13 +22,9 @@ function stanford_jumpstart_home_ctools_plugin_api() {
  */
 function stanford_jumpstart_home_help($path, $arg) {
   switch ($path) {
-    // Main module help for the block module
-    /*
-     *case 'admin/help#block':
-     *  return '<p>' . t('Blocks are boxes of content rendered into an area, or region, of a web page. The default theme Bartik, for example, implements the regions "Sidebar first", "Sidebar second", "Featured", "Content", "Header", "Footer", etc., and a block may appear in any one of these areas. The <a href="@blocks">blocks administration page</a> provides a drag-and-drop interface for assigning a block to a region, and for controlling the order of blocks within regions.', array('@blocks' => url('admin/structure/block'))) . '</p>';
-     */
+    // Main module help for the block module.
     case 'admin/stanford-jumpstart-home':
-      return '<p>' . t('For more help please contact %sws', array('%sws' => l('Stanford Web Services', 'mailto:sitesjumpstart-help@lists.stanford.edu'))) . '</p>';
+      return '<p>' . t('For more help please contact %sws', array('%sws' => l(t('Stanford Web Services'), 'mailto:sitesjumpstart-help@lists.stanford.edu'))) . '</p>';
   }
 }
 
@@ -83,7 +78,6 @@ function stanford_jumpstart_home_menu() {
 
 /**
  * The dashboard functionality for the home page.
- * @return [type] [description]
  */
 function stanford_jumpstart_home_dashboard() {
   $output = "";
@@ -95,10 +89,7 @@ function stanford_jumpstart_home_dashboard() {
 }
 
 /**
- * [stanford_jumpstart_homepage_dashboard_form description]
- * @param  [type] $form       [description]
- * @param  [type] $form_state [description]
- * @return [type]             [description]
+ * Customize Design form.
  */
 function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
 
@@ -120,7 +111,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
 
   $form['choosehome']['layouts']["#tree"] = TRUE;
 
-  foreach ($layouts as $index => $config) {
+  foreach ($layouts as $config) {
 
     $context = context_load($config['context']);
     $options = variable_get('sjh_' . $context->name, array());
@@ -128,7 +119,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
     $access = user_access('see enabled homepage options');
 
     if (!$context) {
-      drupal_set_message('Could not load context: ' . $config['context'], 'error');
+      drupal_set_message(t('Could not load context: !context', array('!context' => $config['context'])), 'error');
       continue;
     }
 
@@ -171,7 +162,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
       'width' => 270,
       'attributes' => array(),
     );
-    $form['choosehome']['layouts'][$key]['thumb']["#markup"] = theme_image($variables);
+    $form['choosehome']['layouts'][$key]['thumb']["#markup"] = theme('image', $variables);
 
     // Enabled.
     $selectedornot = ($context->disabled) ? t("Select") : t("Selected");
@@ -228,7 +219,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
       );
     }
 
-    // Color picker
+    // Color picker.
     if (!empty($config['color'])) {
       $form['choosehome']['layouts'][$key]['color'] = array(
         '#title' => t('Choose color'),
@@ -293,7 +284,7 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
   // Include theme-settings.php.
   $themesettingsphp = drupal_get_path('theme', 'stanford_framework') . "/theme-settings.php";
   if (!is_file($themesettingsphp)) {
-    drupal_set_message("Could not find theme-settings.php for Stanford Framework theme", 'error');
+    drupal_set_message(t("Could not find theme-settings.php for Stanford Framework theme"), 'error');
     return $form;
   }
   require_once $themesettingsphp;
@@ -308,10 +299,9 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
   $form['design_container']['#tree'] = TRUE;
   $form['design_container']['#collapsible'] = FALSE;
 
-
-  $form['include_flat_styles'] = array(
+  $form['design_container']['include_flat_styles'] = array(
     '#type' => 'checkbox',
-    '#title' => t('Include Flat Styles'),
+    '#title' => t('Include BIG text'),
     '#weight' => 9998,
     '#default_value' => variable_get('stanford_jumpstart_home_include_flat_styles', 1),
   );
@@ -329,9 +319,6 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
 
 /**
  * Save all the images!
- * @param  [type] $form       [description]
- * @param  [type] $form_state [description]
- * @return [type]             [description]
  */
 function stanford_jumpstart_homepage_dashboard_form_submit($form, $form_state) {
   $active = variable_get('stanford_jumpstart_home_active', '');
@@ -366,25 +353,22 @@ function stanford_jumpstart_homepage_dashboard_form_submit($form, $form_state) {
   }
   // Force custom option.
   $theme_settings['choosestyle_styleoptions'] = 'style-custom';
-  variable_set('stanford_jumpstart_home_include_flat_styles', $values['include_flat_styles']);
+  variable_set('stanford_jumpstart_home_include_flat_styles', $values['design_container']['include_flat_styles']);
 
   variable_set('theme_stanford_framework_settings', $theme_settings);
 
-  drupal_set_message('Customized design options saved', 'status');
+  drupal_set_message(t('Customized design options saved'), 'status');
 }
 
 /**
  * Changes the context based on the submitted button from the dashboard form.
- * @param  [type] $form       [description]
- * @param  [type] $form_state [description]
- * @return [type]             [description]
  */
 function stanford_homepage_switch_context($form, $form_state) {
   $values = $form_state['values'];
   $selected = $form_state["clicked_button"]['#parents'][1];
   $context_status = variable_get('context_status', array());
 
-  foreach ($values['layouts'] as $k => $config) {
+  foreach ($values['layouts'] as $config) {
     $context_name = $config['context_name'];
     $context_status[$context_name] = TRUE;
   }
@@ -401,10 +385,9 @@ function stanford_homepage_switch_context($form, $form_state) {
 
 /**
  * Additional field formatter for file_managed to display a thumbnail.
- * @param  [type] $element    The form element
- * @param  [type] $form_state [description]
- * @param  [type] $form       [description]
- * @return [type]             [description]
+ *
+ * @return array
+ *   Render array with extra thumbnail.
  */
 function stanford_jumpstart_home_process_file_managed($element, &$form_state, $form) {
   $element = file_managed_file_process($element, $form_state, $form);
@@ -420,7 +403,7 @@ function stanford_jumpstart_home_process_file_managed($element, &$form_state, $f
       'width' => NULL,
       'height' => NULL,
     );
-    $thumb = theme_image_style($variables);
+    $thumb = theme('image_style', $variables);
     $element['filename']['#markup'] = "<span class=\"file\">" . $thumb . "</span>";
   }
 
@@ -428,9 +411,7 @@ function stanford_jumpstart_home_process_file_managed($element, &$form_state, $f
 }
 
 /**
- * [stanford_jumpstart_home_preprocess_html description]
- * @param  [type] $vars [description]
- * @return [type]       [description]
+ * Implements hook_preprocess_html().
  */
 function stanford_jumpstart_home_preprocess_html(&$vars) {
   if (variable_get('stanford_jumpstart_home_include_flat_styles', 0)) {
@@ -460,9 +441,7 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
     return;
   }
 
-  // Header Image File Upload
-  // ---------------------------------------------------------------------------
-
+  // Header Image File Upload.
   // Try to load a file from the upload form.
   if (isset($settings['header_image'])) {
     $header_file = file_load($settings['header_image']);
@@ -485,8 +464,7 @@ function stanford_jumpstart_home_preprocess_html(&$vars) {
     $vars['header_bkg_path'] = url($header_file->uri, array('absolute' => TRUE));
   }
 
-  // Light or dark theme option
-  // ---------------------------------------------------------------------------
+  // Light or dark theme option.
   if (isset($settings['light_dark'])) {
     if ($settings['light_dark'] == "light") {
       $vars['header_bkg_text'] = "header-bkg-text-light";

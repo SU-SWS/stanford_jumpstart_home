@@ -1,6 +1,8 @@
 <?php
+
 /**
- * Description of context goes here.
+ * @file
+ * Panama Layout.
  */
 
 $context = new stdClass();

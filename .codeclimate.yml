@@ -141,6 +141,7 @@ ratings:
   - "**.js"
 # exclude these files/paths
 exclude_paths:
+- "**/node_modules/**"
 - "**.features.**"
 - "**.views_default.inc"
 - "**.field_group.inc"

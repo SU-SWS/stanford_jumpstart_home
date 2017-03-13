@@ -1,5 +1,4 @@
-/** GLOBAL **/
-
+// GLOBAL
 body #main-menu,
 body #fullwidth-top,
 body #main,
@@ -85,7 +84,7 @@ li {
   }
 }
 
-/** MASTHEAD **/
+// MASTHEAD
 
 .site-name a,
 .site-name a:hover {
@@ -99,7 +98,7 @@ li {
   letter-spacing: -.5px;
 }
 
-/** MAIN NAVIGATION **/
+// MAIN NAVIGATION
 
 .navbar .btn-navbar {
   padding: 12px;
@@ -116,7 +115,7 @@ li {
   }
 }
 
-/** SUBNAV **/
+// SUBNAV
 
 .sidebar {
   margin-top: .8em;
@@ -145,7 +144,7 @@ li {
   }
 }
 
-/** FOOTER **/
+// FOOTER
 
 #footer #footer-content .block {
   font-size: .8em;
@@ -166,7 +165,7 @@ li {
   }
 }
 
-/** BANNERS **/
+// BANNERS
 
 .banner-overlay p {
   font-size: 1em;
@@ -178,7 +177,7 @@ li {
   margin-bottom: 0.3em;
 }
 
-/** WELL BLOCKS **/
+// WELL BLOCKS
 
 .well a.more-link,
 .well .more-link a {
@@ -188,14 +187,14 @@ li {
 
 .well .descriptor {
   font-size: .8em;
-  margin: .2em 0 0 0;
+  margin: .2em 0 0;
 }
 
 .well h2 {
   font-size: 1.5em;
 }
 
-/** VIEWS AND POSTCARDS **/
+// VIEWS AND POSTCARDS
 
 .view .postcard-left,
 .view .postcard-left-wrap,
@@ -229,7 +228,7 @@ li {
   padding-right: 1.3em;
 }
 
-/** MISC CLASSES **/
+// MISC CLASSES
 
 .descriptor {
   letter-spacing: .2px;
