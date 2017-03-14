@@ -1,6 +1,8 @@
 <?php
+
 /**
  * @file
+ * Palm News Events Layout.
  */
 
 $context = new stdClass();

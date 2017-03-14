@@ -1,6 +1,8 @@
 <?php
+
 /**
  * @file
+ * Mayfield Layout.
  */
 
 $context = new stdClass();

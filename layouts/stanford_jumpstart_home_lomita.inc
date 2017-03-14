@@ -1,6 +1,8 @@
 <?php
+
 /**
  * @file
+ * Lomita Layout.
  */
 
 $context = new stdClass();

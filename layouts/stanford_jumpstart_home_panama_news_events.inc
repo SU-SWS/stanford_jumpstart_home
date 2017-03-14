@@ -1,6 +1,8 @@
 <?php
+
 /**
  * @file
+ * Panama News Events Layout.
  */
 
 $context = new stdClass();

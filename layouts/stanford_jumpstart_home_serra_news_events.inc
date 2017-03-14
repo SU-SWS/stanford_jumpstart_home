@@ -1,6 +1,8 @@
 <?php
+
 /**
  * @file
+ * Serra News Events Layout.
  */
 
 $context = new stdClass();

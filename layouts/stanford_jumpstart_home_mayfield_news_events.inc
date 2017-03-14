@@ -1,6 +1,8 @@
 <?php
+
 /**
  * @file
+ * Mayfield News Event Layout.
  */
 
 $context = new stdClass();

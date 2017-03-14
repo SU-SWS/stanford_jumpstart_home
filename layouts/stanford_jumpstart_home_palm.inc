@@ -1,6 +1,8 @@
 <?php
+
 /**
  * @file
+ * Palm Layout.
  */
 
 $context = new stdClass();
