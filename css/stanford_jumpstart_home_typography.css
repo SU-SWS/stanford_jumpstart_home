@@ -58,11 +58,13 @@ li {
     font-size: 2em;
   }
 }
+
 @media (max-width: 767px) {
   .main {
     padding-top: 16px;
   }
 }
+
 @media (max-width: 480px) {
   h1 {
     font-size: 1.7em;
@@ -126,11 +128,13 @@ li {
     width: 100%;
   }
 }
+
 @media (max-width: 480px) {
   .sidebar {
     margin-bottom: 0;
   }
 }
+
 #footer #footer-content .block {
   font-size: .8em;
   line-height: 1.4em;
@@ -149,6 +153,7 @@ li {
     margin-bottom: .5em;
   }
 }
+
 .banner-overlay p {
   font-size: 1em;
 }
