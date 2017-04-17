@@ -177,6 +177,33 @@ li {
   margin-bottom: 0.3em;
 }
 
+.span6 .banner-overlay h2 {
+  font-size: 1.4em;
+}
+
+.span6 .banner-overlay p,
+.span6 .banner-overlay a.more-link,
+.span6 .banner-overlay .more-link a {
+  font-size: .9em;
+}
+
+// CAROUSEL
+
+.view.carousel .carousel-caption.carousel-position-left,
+.view.carousel .carousel-caption.carousel-position-right {
+  width: 100%;
+  max-width: 100%;
+}
+
+.carousel-caption {
+  position: static;
+  background-color: rgba(0,0,0,1);
+}
+
+.view.carousel .carousel-caption.carousel-light {
+  background-color: rgba(255, 255, 255, 1);
+}
+
 // WELL BLOCKS
 
 .well a.more-link,
