@@ -180,7 +180,7 @@ li {
   max-width: 100%;
 }
 
-.carousel-caption {
+.carousel .carousel-caption {
   position: static;
   background-color: rgba(0,0,0,1);
 }
