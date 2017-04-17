@@ -213,6 +213,17 @@ li {
   }
 }
 
+@media (max-width: 630px) {
+  .view.carousel .carousel-caption.carousel-dark,
+  .view.carousel .carousel-caption.carousel-dark h2 a,
+  .view.carousel .carousel-caption.carousel-dark .slide-caption a,
+  .view.carousel .carousel-caption.carousel-dark a.more-link:hover,
+  .view.carousel .carousel-caption.carousel-dark .more-link a:hover,
+  .view.carousel .carousel-caption.carousel-dark a.more-link:focus,
+  .view.carousel .carousel-caption.carousel-dark .more-link a:focus {
+    color: #ffffff;
+}
+
 .well a.more-link,
 .well .more-link a {
   font-size: 20px;
