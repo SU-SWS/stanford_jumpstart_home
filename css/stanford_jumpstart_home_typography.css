@@ -154,13 +154,13 @@ li {
   }
 }
 
-.banner-overlay p {
+.bean-stanford-banner .banner-overlay p {
   font-size: 1em;
 }
 
-.banner-overlay h2,
-.banner-overlay h3,
-.banner-overlay h4 {
+.bean-stanford-banner .banner-overlay h2,
+.bean-stanford-banner .banner-overlay h3,
+.bean-stanford-banner .banner-overlay h4 {
   margin-bottom: 0.3em;
 }
 
