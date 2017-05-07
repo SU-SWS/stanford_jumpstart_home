@@ -154,6 +154,10 @@ li {
   }
 }
 
+.banner-overlay>div {
+  top: -208px;
+}
+
 .bean-stanford-banner .banner-overlay p {
   font-size: 1em;
 }
