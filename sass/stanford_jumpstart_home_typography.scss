@@ -1,5 +1,3 @@
-// GLOBAL
-
 body #footer,
 body #fullwidth-bottom,
 body #fullwidth-top,
@@ -55,16 +53,19 @@ body #main-menu {
   li {
     margin-bottom: 0.6em;
   }
+
   @media (max-width: 980px) {
     h1 {
       font-size: 2em;
     }
   }
+
   @media (max-width: 767px) {
     .main {
       padding-top: 16px;
     }
   }
+
   @media (max-width: 480px) {
     h1 {
       font-size: 1.7em;
@@ -127,12 +128,14 @@ body #main-menu {
   .sidebar .block-menu-block a {
     font-weight: 400;
   }
+
   @media (max-width: 767px) {
     .site-sidebar-first .block,
     .site-sidebar-second .block {
       width: 100%;
     }
   }
+
   @media (max-width: 480px) {
     .sidebar {
       margin-bottom: 0;
@@ -145,6 +148,7 @@ body #main-menu {
     font-size: 0.8em;
     line-height: 1.4em;
   }
+
   @media (max-width: 767px) {
     #block-bean-jumpstart-footer-contact-block {
       margin-bottom: 1.4em;
@@ -191,22 +195,25 @@ body #main-menu {
 
   .carousel .carousel-caption {
     position: static;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 1);
   }
 
   .view.carousel .carousel-caption.carousel-light {
     background-color: rgba(255, 255, 255, 1);
   }
+
   @media (max-width: 979px) and (min-width: 768px) {
     .view.carousel .carousel-caption.carousel-dark {
-      background: #000000;
+      background: #000;
     }
   }
+
   @media (max-width: 630px) {
     .view.carousel .carousel-caption.carousel-dark {
-      background: #000000;
+      background: #000;
     }
   }
+
   @media (max-width: 979px) and (min-width: 768px) {
     .view.carousel .carousel-caption.carousel-dark,
     .view.carousel .carousel-caption.carousel-dark .more-link a:focus,
@@ -215,9 +222,10 @@ body #main-menu {
     .view.carousel .carousel-caption.carousel-dark a.more-link:focus,
     .view.carousel .carousel-caption.carousel-dark a.more-link:hover,
     .view.carousel .carousel-caption.carousel-dark h2 a {
-      color: #ffffff;
+      color: #fff;
     }
   }
+
   @media (max-width: 630px) {
     .view.carousel .carousel-caption.carousel-dark,
     .view.carousel .carousel-caption.carousel-dark .more-link a:focus,
@@ -226,7 +234,7 @@ body #main-menu {
     .view.carousel .carousel-caption.carousel-dark a.more-link:focus,
     .view.carousel .carousel-caption.carousel-dark a.more-link:hover,
     .view.carousel .carousel-caption.carousel-dark h2 a {
-      color: #ffffff;
+      color: #fff;
     }
   }
 
@@ -312,6 +320,7 @@ body #main-menu {
   .summary {
     font-size: 1.5em;
   }
+
   @media (max-width: 767px) {
     .summary {
       font-size: 1.2em;
