@@ -414,7 +414,7 @@ function stanford_jumpstart_home_process_file_managed($element, &$form_state, $f
  * Implements hook_preprocess_html().
  */
 function stanford_jumpstart_home_preprocess_html(&$vars) {
-  if (variable_get('stanford_jumpstart_home_include_flat_styles', 0)) {
+  if (variable_get('stanford_jumpstart_home_include_flat_styles', 1)) {
     drupal_add_css(drupal_get_path('module', 'stanford_jumpstart_home') . '/css/stanford_jumpstart_home_typography.css');
     $vars['classes_array'][] = 'big-text-styles';
   }

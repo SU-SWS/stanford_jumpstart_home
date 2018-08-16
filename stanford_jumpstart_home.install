@@ -9,7 +9,6 @@
  * Implements hook_install().
  */
 function stanford_jumpstart_home_install() {
-  variable_set('stanford_jumpstart_home_include_flat_styles', 1);
   variable_set('stanford_jumpstart_home_active', 'stanford_jumpstart_home_palm');
   variable_set("stanford_jumpstart_home_default_header_image", drupal_get_path("module", "stanford_jumpstart_home") . "/img/header-background-default.jpg");
 
@@ -35,5 +34,5 @@ function stanford_jumpstart_home_install() {
  * Sets variable for existing sites.
  */
 function stanford_jumpstart_home_update_7001() {
-  variable_set('stanford_jumpstart_home_include_flat_styles', 0);
+  // Removed for legacy reasons.
 }
