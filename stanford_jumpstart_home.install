@@ -37,10 +37,6 @@ function stanford_jumpstart_home_update_7001() {
 
   // Grab the raw value previously used and set it in case the site is not
   // on the default setting for the variable.
-  $raw_value = db_select("variable", "v")
-    ->fields("v", array("value"))
-    ->condition("name", "stanford_jumpstart_home_include_flat_styles")
-    ->execute()
-    ->fetchField();
-  variable_set("stanford_jumpstart_home_include_flat_styles", $raw_value);
+  $original_value = variable_get("stanford_jumpstart_home_include_flat_styles", 0);
+  variable_set("stanford_jumpstart_home_include_flat_styles", $original_value);
 }
