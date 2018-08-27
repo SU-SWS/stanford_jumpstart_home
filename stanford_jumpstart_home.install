@@ -33,7 +33,7 @@ function stanford_jumpstart_home_install() {
 /**
  * Sets variable for existing sites.
  */
-function stanford_jumpstart_home_update_7001() {
+function stanford_jumpstart_home_update_7100() {
 
   // Grab the raw value previously used and set it in case the site is not
   // on the default setting for the variable.
