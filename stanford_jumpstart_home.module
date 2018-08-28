@@ -416,16 +416,20 @@ function stanford_jumpstart_home_process_file_managed($element, &$form_state, $f
 function stanford_jumpstart_home_preprocess_html(&$vars) {
 
   // Enable big text styles for version 1.7 and after.
+  // Because of the drastic change in versions 1.6 and 1.7 this upgrade path
+  // addition has been added. New sites 1.7 and after get the new stylesheet and
+  // pervious to version 1.7 sites can opt out of the legacy one.
   if (variable_get('stanford_jumpstart_home_include_flat_styles', 1) && !variable_get('stanford_jumpstart_home_enable_legacy_flat_styles', 0)) {
     drupal_add_css(drupal_get_path('module', 'stanford_jumpstart_home') . '/css/stanford_jumpstart_home_typography.css');
     $vars['classes_array'][] = 'big-text-styles';
   }
 
-  // Legacy condition for those upgrading from less than version 1.7.
+  // Legacy condition for those upgrading from less than version 1.7. For when
+  // a site was using 1.6 or less and relied on the styles as they were. We also
+  // do not add the body class for big-text-styles in the legacy version.
   if (variable_get('stanford_jumpstart_home_include_flat_styles', 1) && variable_get('stanford_jumpstart_home_enable_legacy_flat_styles', 0)) {
     drupal_add_css(drupal_get_path('module', 'stanford_jumpstart_home') . '/css/stanford_jumpstart_home_typography.1.6.css');
   }
-
 
   $context_name = variable_get('stanford_jumpstart_home_active', '');
 
