@@ -31,6 +31,14 @@ function stanford_jumpstart_home_install() {
 }
 
 /**
+ * Implements hook_uninstall().
+ */
+function stanford_jumpstart_home_uninstall() {
+  variable_del('stanford_jumpstart_home_include_flat_styles');
+  variable_del('stanford_jumpstart_home_enable_legacy_flat_styles');
+}
+
+/**
  * Sets variable for existing sites.
  */
 function stanford_jumpstart_home_update_7100() {
