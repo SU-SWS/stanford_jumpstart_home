@@ -1,10 +1,10 @@
-body #footer,	
-body #fullwidth-bottom,	
-body #fullwidth-top,	
-body #main,	
-body #main-menu {	
-  font-size: 20px;	
-  line-height: 1.4em;	
+body #footer,
+body #fullwidth-bottom,
+body #fullwidth-top,
+body #main,
+body #main-menu {
+  font-size: 20px;
+  line-height: 1.4em;
 }
 
 .big-text-styles .navbar .nav > li > a {
