@@ -40,10 +40,10 @@ function stanford_jumpstart_home_update_7100() {
   $is_less_than_one_seven = FALSE;
 
   // Previous version.
-  // Before we blindly run the update try to grab the previous version of the module
-  // if that information is still kicking around in the database. The system table
-  // keeps a serialized version of the .info file that we could use to figure out the
-  // past version as "schema" is unreliable. 
+  // Before we blindly run the update try to grab the previous version of the
+  // module if that information is still kicking around in the database. The
+  // system table keeps a serialized version of the .info file that we could use
+  // to figure out the past version as "schema" is unreliable.
   $info = db_select("system", "s")
     ->fields('s', array('info'))
     ->condition('name', 'stanford_jumpstart_home')
@@ -52,7 +52,7 @@ function stanford_jumpstart_home_update_7100() {
   $info = unserialize($info);
 
   // Grab the previous version and hope to gosh that it is a tag and not the
-  // dev version. If we get a dev version just fail over to assuming >= 1.7. 
+  // dev version. If we get a dev version just fail over to assuming >= 1.7.
   if (isset($info['version'])) {
     $prev_version = $info['version'];
     if ($prev_version !== "7.x-1.x") {
@@ -62,8 +62,8 @@ function stanford_jumpstart_home_update_7100() {
   }
 
   // If the previous version was less than 1.7 we enable legacy styles.
-  // This will enable a legacy stylesheet instead of the new one. Peeps don't 
-  // like us messing with their styles. 
+  // This will enable a legacy stylesheet instead of the new one. Peeps don't
+  // like us messing with their styles.
   if ($is_less_than_one_seven) {
     variable_set('stanford_jumpstart_home_enable_legacy_flat_styles', 1);
   }
