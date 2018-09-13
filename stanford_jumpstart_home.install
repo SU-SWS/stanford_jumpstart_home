@@ -42,40 +42,6 @@ function stanford_jumpstart_home_uninstall() {
  * Sets variable for existing sites.
  */
 function stanford_jumpstart_home_update_7100() {
-
-  // Version to deprecate at.
-  $baseline = "1.7";
-  $is_less_than_one_seven = FALSE;
-
-  // Previous version.
-  // Before we blindly run the update try to grab the previous version of the
-  // module if that information is still kicking around in the database. The
-  // system table keeps a serialized version of the .info file that we could use
-  // to figure out the past version as "schema" is unreliable.
-  $info = db_select("system", "s")
-    ->fields('s', array('info'))
-    ->condition('name', 'stanford_jumpstart_home')
-    ->execute()
-    ->fetchField();
-  $info = unserialize($info);
-
-  // Grab the previous version and hope to gosh that it is a tag and not the
-  // dev version. If we get a dev version just fail over to assuming >= 1.7.
-  if (isset($info['version'])) {
-    $prev_version = $info['version'];
-    if ($prev_version !== "7.x-1.x") {
-      $normalized_version = str_replace("7.x-", "", $prev_version);
-      $is_less_than_one_seven = version_compare($normalized_version, $baseline, "<");
-    }
-  }
-
-  // If the previous version was less than 1.7 we enable legacy styles.
-  // This will enable a legacy stylesheet instead of the new one. Peeps don't
-  // like us messing with their styles.
-  if ($is_less_than_one_seven) {
-    variable_set('stanford_jumpstart_home_enable_legacy_flat_styles', 1);
-  }
-
   // Grab the raw value previously used and set it in case the site is not
   // on the default setting for the variable.
   $original_value = variable_get("stanford_jumpstart_home_include_flat_styles", 0);
