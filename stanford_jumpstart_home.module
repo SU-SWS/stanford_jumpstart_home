@@ -303,6 +303,8 @@ function stanford_jumpstart_homepage_dashboard_form($form, $form_state) {
     '#type' => 'checkbox',
     '#title' => t('Include BIG text'),
     '#weight' => 9998,
+    // Yes, the variable is named "stanford_jumpstart_home_include_flat_styles",
+    // and the UI option is "Include BIG text"
     '#default_value' => variable_get('stanford_jumpstart_home_include_flat_styles', 1),
   );
 
